@@ -23,7 +23,7 @@ const About = () => {
             personPlaceholderM={PersonPlaceholderM}
           />
           <AboutColRight>
-            <HeadingSecondary>O Mnie</HeadingSecondary>
+            <HeadingSecondary sectionAbout>O Mnie</HeadingSecondary>
             <DescriptionText>
               I’m a junior front-end developer looking for a new role in an
               exciting company. I focus on writing accessible HTML, using modern

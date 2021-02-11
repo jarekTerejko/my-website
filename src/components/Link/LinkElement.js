@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const LinkR = styled(Link)`
   border: 2px solid var(--color-dark-blue);
-  background: transparent;
+  background: var(--color-very-light-gray);
   padding: 1.5rem 4rem;
   text-transform: uppercase;
   font-size: 1.2rem;
