@@ -25,7 +25,7 @@
   --weight-bold: 700;
 
   /* Design elements */
-  --transition: 300ms ease-in;
+  --transition: 300ms ease;
 }
 *,
 *::before,
@@ -37,6 +37,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {

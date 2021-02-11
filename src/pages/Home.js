@@ -1,9 +1,11 @@
 import Hero from "../components/Hero";
+import About from "../components/SectionAbout";
 
-export const Home = () => {
+const Home = () => {
   return (
     <>
       <Hero />
+      <About />
     </>
   );
 };

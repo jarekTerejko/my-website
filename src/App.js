@@ -1,11 +1,19 @@
-const { default: Home } = require("./pages/Home");
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
-function App() {
+const App = () => {
   return (
     <>
-      <Home />
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          {/* <Route path="/projets" exact component={Projects} />
+          <Route path="/contact" exact component={Contact} /> */}
+        </Switch>
+      </Router>
     </>
   );
-}
+};
 
 export default App;

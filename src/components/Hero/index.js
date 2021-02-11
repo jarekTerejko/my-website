@@ -16,7 +16,7 @@ import ChevronsIcon from "../../images/homepage/chevrons-down.svg";
 const Hero = () => {
   return (
     <HeroWrapper>
-      <WrapperEl paddingMobile>
+      <WrapperEl>
         <HeroBgImg
           heroImgDesktop={HeroImgDesktop}
           heroImgTablet={HeroImgTablet}
@@ -27,7 +27,7 @@ const Hero = () => {
             Witaj! Nazywam sie Jarek. Moją pasją jest tworzenie pięknych stron
             internetowych.
           </HeroHeading>
-          <DarkButton href="#">
+          <DarkButton href="#about">
             <ChevronsDownIcon src={ChevronsIcon} />
             About me
           </DarkButton>
