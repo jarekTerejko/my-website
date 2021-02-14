@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +12,7 @@ const App = () => {
   };
 
   const [scrolledNav, setScrolledNav] = useState(false);
+
   const changeNav = () => {
     if (window.scrollY > 0) {
       setScrolledNav(true);
@@ -22,7 +24,12 @@ const App = () => {
   return (
     <>
       <Router>
-        <Navbar scrolledNav={scrolledNav} changeNav={changeNav} handleMenu={handleMenu} isOpen={isOpen} />
+        <Navbar
+          scrolledNav={scrolledNav}
+          changeNav={changeNav}
+          handleMenu={handleMenu}
+          isOpen={isOpen}
+        />
         <Switch>
           <Route path="/" exact>
             <Home scrolledNav={scrolledNav} />
@@ -31,6 +38,7 @@ const App = () => {
           {/* <Route path="/projets" exact component={Projects} />
           <Route path="/contact" exact component={Contact} /> */}
         </Switch>
+        <Footer />
       </Router>
     </>
   );

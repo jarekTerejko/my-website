@@ -8,8 +8,8 @@ export const NavbarWrapper = styled.nav`
   width: 100%;
   z-index: 1;
   background: ${(props) =>
-    props.scrolledNav ? "var(--color-grayish-dark-blue)" : `transparent`};
-  padding: ${(props) => (props.scrolledNav ? "1rem 0" : `4rem 2rem`)};
+    props.$scrolledNav ? "var(--color-grayish-dark-blue)" : `transparent`};
+  padding: ${(props) => (props.$scrolledNav ? "1rem 0" : `4rem 2rem`)};
   transition: background-color var(--transition), padding var(--transition);
 
   @media screen and (max-width: 500px) {
@@ -52,7 +52,7 @@ export const NavbarNavItems = styled.ul`
   @media screen and (max-width: 500px) {
     position: fixed;
     transform: ${(props) =>
-      props.isOpen ? `translateX(0)` : "translateX(-100%)"};
+      props.$isOpen ? `translateX(0)` : "translateX(-100%)"};
     left: 0;
     top: 80px;
     flex-direction: column;
@@ -74,7 +74,8 @@ export const NavbarNavLinkR = styled(NavLink)`
   letter-spacing: 2px;
   text-transform: uppercase;
   color: ${(props) =>
-    props.scrolledNav ? "var(--color-light-gray)" : "var(--color-dark-blue)"};
+    props.$scrolledNav ? "var(--color-light-gray)" : "var(--color-dark-blue)"};
+  color: ${(props) => (props.$footerLink ? "var(--color-light-gray)" : "")};
   transition: color var(--transition);
 
   &:hover {

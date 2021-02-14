@@ -32,21 +32,21 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
   };
 
   return (
-    <NavbarWrapper scrolledNav={scrolledNav}>
+    <NavbarWrapper $scrolledNav={scrolledNav}>
       <WrapperEl>
         <NavbarInnerWrapper>
-          <NavbarSiteLinkR to="/" isOpen={isOpen} onClick={closeMenu}>
-            <ImageEl src={Logo} />
+          <NavbarSiteLinkR to="/" $isOpen={isOpen} onClick={closeMenu}>
+            <ImageEl src={Logo} alt="Logo" />
           </NavbarSiteLinkR>
           <NavbarMenuBtn onClick={handleMenu}>
             <ImageEl src={isOpen ? `${X}` : `${Bars}`} />
           </NavbarMenuBtn>
-          <NavbarNavItems isOpen={isOpen}>
+          <NavbarNavItems $isOpen={isOpen}>
             <NavbarNavItem>
               <NavbarNavLinkR
                 to="/"
-                scrolledNav={scrolledNav}
-                isOpen={isOpen}
+                $scrolledNav={scrolledNav}
+                $isOpen={isOpen}
                 onClick={handleMenu}
               >
                 Home
@@ -54,9 +54,9 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
             </NavbarNavItem>
             <NavbarNavItem>
               <NavbarNavLinkR
-                scrolledNav={scrolledNav}
+                $scrolledNav={scrolledNav}
                 to="/projects"
-                isOpen={isOpen}
+                $isOpen={isOpen}
                 onClick={handleMenu}
               >
                 Projekty
@@ -64,9 +64,9 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
             </NavbarNavItem>
             <NavbarNavItem>
               <NavbarNavLinkR
-                scrolledNav={scrolledNav}
+                $scrolledNav={scrolledNav}
                 to="/contact"
-                isOpen={isOpen}
+                $isOpen={isOpen}
                 onClick={handleMenu}
               >
                 Kontakt
