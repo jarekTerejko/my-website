@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const HeroWrapper = styled.header`
   position: relative;
+  margin-top: ${(props) => (props.scrolledNav ? `8rem` : "14rem")};
+  transition: var(--transition);
+
+  @media screen and (max-width: 500px) {
+    margin-top: 8rem;
+  }
 `;
 
 export const HeroBgImg = styled.div`

@@ -13,9 +13,9 @@ import { DarkButton } from "../Button/ButtonElement";
 import { ChevronsDownIcon } from "../ChevronsDown/ChevronsDownElement";
 import ChevronsIcon from "../../images/homepage/chevrons-down.svg";
 
-const Hero = () => {
+const Hero = ({scrolledNav}) => {
   return (
-    <HeroWrapper>
+    <HeroWrapper scrolledNav={scrolledNav}>
       <WrapperEl>
         <HeroBgImg
           heroImgDesktop={HeroImgDesktop}
