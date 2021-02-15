@@ -48,6 +48,7 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
                 $scrolledNav={scrolledNav}
                 $isOpen={isOpen}
                 onClick={handleMenu}
+                exact={true}
               >
                 Home
               </NavbarNavLinkR>
