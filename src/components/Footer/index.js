@@ -32,8 +32,8 @@ const Footer = () => {
               </NavbarNavLinkR>
             </NavbarNavItem>
             <NavbarNavItem>
-              <NavbarNavLinkR to="/projects" $footerLink>
-                Projekty
+              <NavbarNavLinkR to="/portfolio" $footerLink>
+                Portfolio
               </NavbarNavLinkR>
             </NavbarNavItem>
             <NavbarNavItem>

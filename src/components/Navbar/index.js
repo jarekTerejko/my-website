@@ -56,11 +56,11 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
             <NavbarNavItem>
               <NavbarNavLinkR
                 $scrolledNav={scrolledNav}
-                to="/projects"
+                to="/portfolio"
                 $isOpen={isOpen}
                 onClick={handleMenu}
               >
-                Projekty
+                Portfolio
               </NavbarNavLinkR>
             </NavbarNavItem>
             <NavbarNavItem>
