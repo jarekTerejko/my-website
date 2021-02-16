@@ -23,7 +23,7 @@ const About = () => {
             personPlaceholderM={PersonPlaceholderM}
           />
           <AboutColRight>
-            <HeadingSecondary sectionAbout>O Mnie</HeadingSecondary>
+            <HeadingSecondary marginBottom="4rem">O Mnie</HeadingSecondary>
             <DescriptionText>
               I’m a junior front-end developer looking for a new role in an
               exciting company. I focus on writing accessible HTML, using modern
@@ -35,7 +35,7 @@ const About = () => {
               going for a walk, run or cycling. I’d love you to check out my
               work.
             </DescriptionText>
-            <LinkR to="/projects">Projekty</LinkR>
+            <LinkR to="/portfolio">Portfolio</LinkR>
           </AboutColRight>
         </AboutCols>
       </WrapperEl>
