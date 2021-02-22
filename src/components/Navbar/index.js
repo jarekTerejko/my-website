@@ -34,7 +34,7 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
   return (
     <NavbarWrapper $scrolledNav={scrolledNav}>
       <WrapperEl>
-        <NavbarInnerWrapper>
+        <NavbarInnerWrapper $scrolledNav={scrolledNav} >
           <NavbarSiteLinkR to="/" $isOpen={isOpen} onClick={closeMenu}>
             <ImageEl src={Logo} alt="Logo" />
           </NavbarSiteLinkR>

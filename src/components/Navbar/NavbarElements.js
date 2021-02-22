@@ -7,14 +7,13 @@ export const NavbarWrapper = styled.nav`
   left: 0;
   width: 100%;
   z-index: 1;
-  background: ${(props) =>
-    props.$scrolledNav ? "var(--color-grayish-dark-blue)" : `transparent`};
-  padding: ${(props) => (props.$scrolledNav ? "1rem 0" : `4rem 2rem`)};
-  transition: background-color var(--transition), padding var(--transition);
+  background: var(--color-very-light-gray);
+  box-shadow: ${(props) =>
+    props.$scrolledNav ? "1px 1px 10px 1px rgba(0,0,0, .2)" : ""};
+  transition: background-color var(--transition);
 
-  @media screen and (max-width: 500px) {
-    padding: 1rem 0;
-    background: var(--color-grayish-dark-blue);
+  @media screen and (max-width: 550px) {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   }
 `;
 
@@ -22,6 +21,12 @@ export const NavbarInnerWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: ${(props) => (props.$scrolledNav ? "1rem 0" : `4rem 2rem`)};
+  transition: padding var(--transition);
+
+  @media screen and (max-width: 550px) {
+    padding: 1rem 0;
+  }
 `;
 
 export const NavbarSiteLinkR = styled(Link)``;
@@ -37,7 +42,7 @@ export const NavbarMenuBtn = styled.button`
   cursor: pointer;
   display: none;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     transform: translateX(6px);
     display: flex;
   }
@@ -49,7 +54,7 @@ export const NavbarNavItems = styled.ul`
   transform: translateX(20px);
   transition: var(--transition);
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     position: fixed;
     transform: ${(props) =>
       props.$isOpen ? `translateX(0)` : "translateX(-100%)"};
@@ -58,7 +63,7 @@ export const NavbarNavItems = styled.ul`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--color-grayish-dark-blue);
+    background: var(--color-very-light-gray);
     width: 80%;
     height: calc(100vh - 80px);
   }
@@ -73,8 +78,6 @@ export const NavbarNavLinkR = styled(NavLink)`
   font-size: 1.2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: ${(props) =>
-    props.$scrolledNav ? "var(--color-light-gray)" : "var(--color-dark-blue)"};
   color: ${(props) => (props.$footerLink ? "var(--color-light-gray)" : "")};
   transition: color var(--transition);
 
@@ -86,7 +89,7 @@ export const NavbarNavLinkR = styled(NavLink)`
     color: var(--color-cyan);
   }
 
-  @media screen and (max-width: 500px) {
-    color: var(--color-light-gray);
+  @media screen and (max-width: 550px) {
+    font-size: 1.4rem;
   }
 `;
