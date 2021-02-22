@@ -78,6 +78,7 @@ export const NavbarNavLinkR = styled(NavLink)`
   font-size: 1.2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: var(--color-dark-blue);
   color: ${(props) => (props.$footerLink ? "var(--color-light-gray)" : "")};
   transition: color var(--transition);
 

@@ -34,12 +34,15 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
   return (
     <NavbarWrapper $scrolledNav={scrolledNav}>
       <WrapperEl>
-        <NavbarInnerWrapper $scrolledNav={scrolledNav} >
+        <NavbarInnerWrapper $scrolledNav={scrolledNav}>
           <NavbarSiteLinkR to="/" $isOpen={isOpen} onClick={closeMenu}>
             <ImageEl src={Logo} alt="Logo" />
           </NavbarSiteLinkR>
           <NavbarMenuBtn onClick={handleMenu}>
-            <ImageEl src={isOpen ? `${X}` : `${Bars}`} />
+            <ImageEl
+              src={isOpen ? `${X}` : `${Bars}`}
+              alt={isOpen ? "Close Menu" : "Open Menu"}
+            />
           </NavbarMenuBtn>
           <NavbarNavItems $isOpen={isOpen}>
             <NavbarNavItem>
