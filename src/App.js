@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Portfolio from "./pages/Portfolio";
+import Project from "./pages/Project";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,12 +35,18 @@ const App = () => {
         />
         <Switch>
           <Route path="/" exact>
-            <Home scrolledNav={scrolledNav} />
+            <Home />
           </Route>
           <Route path="/portfolio" exact>
             <Portfolio />
           </Route>
+          <Route path="/project/:id" exact>
+            <Project />
+          </Route>
           {/* <Route path="/contact" exact component={Contact} /> */}
+          <Route path="*">
+            <NotFound />
+          </Route>
         </Switch>
         <Footer />
       </Router>

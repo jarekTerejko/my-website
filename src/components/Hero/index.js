@@ -9,13 +9,12 @@ import {
   HeroHeadingWrapper,
 } from "./HeroElements";
 import { WrapperEl } from "../Wrapper/WrapperElement";
-import { DarkButton } from "../Button/ButtonElement";
-import { ChevronsDownIcon } from "../ChevronsDown/ChevronsDownElement";
 import ChevronsIcon from "../../images/homepage/chevrons-down.svg";
+import { MainButton } from "../Button";
 
-const Hero = ({scrolledNav}) => {
+const Hero = ({ scrolledNav }) => {
   return (
-    <HeroWrapper scrolledNav={scrolledNav}>
+    <HeroWrapper>
       <WrapperEl>
         <HeroBgImg
           heroImgDesktop={HeroImgDesktop}
@@ -27,10 +26,7 @@ const Hero = ({scrolledNav}) => {
             Witaj! Nazywam sie Jarek. Moją pasją jest tworzenie pięknych stron
             internetowych.
           </HeroHeading>
-          <DarkButton href="#about">
-            <ChevronsDownIcon src={ChevronsIcon} />
-            About me
-          </DarkButton>
+          <MainButton href="#about" src={ChevronsIcon} text="O mnie" />
         </HeroHeadingWrapper>
       </WrapperEl>
     </HeroWrapper>

@@ -1,5 +1,11 @@
-import { DarkButton, MainButton } from "./ButtonElement";
+import { Button, ChevronsDownIcon } from "./ButtonElements"
 
-export const Button = () => {
-  return <DarkButton />;
-};
+export const MainButton = ({src, text, href}) => {
+  return (
+    <Button href={href}>
+      <ChevronsDownIcon src={src} />
+      {text}
+    </Button>
+  )
+}
+

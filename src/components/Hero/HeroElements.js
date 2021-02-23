@@ -2,12 +2,10 @@ import styled from "styled-components";
 
 export const HeroWrapper = styled.header`
   position: relative;
-  margin-top: ${(props) => (props.scrolledNav ? `8rem` : "14rem")};
+  /* margin-top: ${(props) => (props.scrolledNav ? `8rem` : "14rem")}; */
+  margin: 14rem 0 8rem 0;
+  margin-bottom: 7.5rem;
   transition: var(--transition);
-
-  @media screen and (max-width: 500px) {
-    margin-top: 8rem;
-  }
 `;
 
 export const HeroBgImg = styled.div`
@@ -56,17 +54,16 @@ export const HeroHeadingWrapper = styled.div`
     padding: 4rem 4rem 0 0;
     max-width: 36rem;
   }
+
   @media screen and (max-width: 568px) {
     padding: 3rem 3rem 0 0;
     max-width: 26rem;
   }
-  @media screen and (max-width: 468px) {
-    padding: 2rem 2rem 0 0;
-    max-width: 22rem;
-  }
+
   @media screen and (max-width: 425px) {
     position: static;
     max-width: 100%;
+    padding-top: 3.5rem;
   }
 `;
 
@@ -85,9 +82,10 @@ export const HeroHeading = styled.h1`
     margin-bottom: 2rem;
   }
 
-  @media screen and (max-width: 468px) {
+  @media screen and (max-width: 500px) {
     font-size: 2.2rem;
   }
+
   @media screen and (max-width: 425px) {
     font-size: 2.6rem;
   }
