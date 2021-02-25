@@ -1,12 +1,8 @@
-import React from 'react'
-import Projects from '../components/Projects'
+import React from "react";
+import Projects from "../components/Projects";
 
 const Portfolio = () => {
-    return (
-        <>
-        <Projects />
-        </>
-    )
-}
+  return <Projects />;
+};
 
-export default Portfolio
+export default Portfolio;
