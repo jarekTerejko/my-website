@@ -1,0 +1,10 @@
+{
+  "heroData": {
+    "heroText": "Witaj! Nazywam sie Jarek. Moją pasją jest tworzenie pięknych stron internetowych.",
+    "aboutText": "Jestem programistą samoukiem warstwy wizualnej aplikacji, poszukującym swojego miejsca w świecie IT. Tworząc front-end koncentruję sie na dostępnym i semantycznym HTML-u, nowoczesnych praktykach pisania reguł CSS oraz czystym kodzie JavaScript. Programując w JS używam biblioteki React. Naturalnie potrafię szybko wdrożyć się w nowe narzędzia czy technologie, które są wymagane w projekcie. Gdy nie koduję wybieram relaks i sport na świeżym powietrzu. Lubię także weekendowe wypady poza miasto, a wieczorami film lub serial. Będzie mi niezmiernie miło jeśli sprawdisz, ocenisz i pokochasz moje projekty."
+  },
+  "contactData": {
+    "getInTouchText": "I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and am open to a wide range of opportunities. My preference would be to find a position in a company in London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form."
+    
+  }
+}

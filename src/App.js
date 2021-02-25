@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Portfolio from "./pages/Portfolio";
 import Project from "./pages/Project";
 import NotFound from "./components/NotFound";
+import Contact from "./pages/Contact";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +44,9 @@ const App = () => {
           <Route path="/project/:id" exact>
             <Project />
           </Route>
-          {/* <Route path="/contact" exact component={Contact} /> */}
+          <Route path="/contact" exact>
+            <Contact />
+          </Route>
           <Route path="*">
             <NotFound />
           </Route>
