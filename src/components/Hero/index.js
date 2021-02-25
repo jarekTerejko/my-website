@@ -12,7 +12,7 @@ import { WrapperEl } from "../Wrapper/WrapperElement";
 import ChevronsIcon from "../../images/homepage/chevrons-down.svg";
 import { MainButton } from "../Button";
 
-const Hero = ({ scrolledNav }) => {
+const Hero = ({ heroText }) => {
   return (
     <HeroWrapper>
       <WrapperEl>
@@ -22,10 +22,7 @@ const Hero = ({ scrolledNav }) => {
           heroImgMobile={HeroImgMobile}
         />
         <HeroHeadingWrapper>
-          <HeroHeading>
-            Witaj! Nazywam sie Jarek. Moją pasją jest tworzenie pięknych stron
-            internetowych.
-          </HeroHeading>
+          <HeroHeading>{heroText}</HeroHeading>
           <MainButton href="#about" src={ChevronsIcon} text="O mnie" />
         </HeroHeadingWrapper>
       </WrapperEl>

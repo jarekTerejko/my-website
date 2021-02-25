@@ -21,6 +21,7 @@ export const Button = styled.a`
   position: relative;
   overflow: hidden;
   background: var(--color-cyan);
+  background: var(--color-grayish-dark-blue);
   text-transform: uppercase;
   color: var(--color-very-light-gray);
   padding: 1.5rem 4rem 1.5rem 0;
@@ -28,6 +29,7 @@ export const Button = styled.a`
   display: flex;
   align-items: center;
   letter-spacing: 2px;
+  transition: var(--transition) background;
 
   &::before {
     content: "";
@@ -50,10 +52,13 @@ export const Button = styled.a`
 
     background: linear-gradient(90deg, transparent, #fff, transparent);
 
-    transition: 0.3s;
+    transition: var(--transition) transform;
   }
 
   &:hover::after {
     transform: translateX(100%);
+  }
+  &:hover {
+    background: var(--color-cyan);
   }
 `;

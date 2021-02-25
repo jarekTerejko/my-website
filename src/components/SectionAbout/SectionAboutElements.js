@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const AboutWrapper = styled.section`
   padding: 7.5rem 0;
+  scroll-margin-top: 8rem;
 `;
 
 export const AboutCols = styled.div`
