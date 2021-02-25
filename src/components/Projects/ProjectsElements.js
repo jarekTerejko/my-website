@@ -11,6 +11,11 @@ export const ProjectsCols = styled.article`
   gap: 30px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "col1 col2";
+
+  &:first-child {
+    padding-top: 0;
+  }
+
   &:nth-child(even) {
     grid-template-areas: "col2 col1";
   }
@@ -33,6 +38,7 @@ export const ProjectsCols = styled.article`
     }
   }
 `;
+
 export const ProjectsColLeft = styled.div`
   background: ${(props) =>
     props.projectsBgImgD ? `url(${props.projectsBgImgD})` : "black"};

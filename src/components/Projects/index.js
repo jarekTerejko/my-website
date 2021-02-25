@@ -8,7 +8,7 @@ import {
 } from "./ProjectsElements";
 import { HeadingSecondary } from "../HeadingSecondary/HeadingSecondaryElement";
 import { DescriptionText } from "../DecriptionText/DescriptionTextElement";
-import { ButtonTransparent } from "../ButtonTransparent/ButtonTransparentElement";
+import { LinkR } from "../Link/LinkElement.js";
 
 const Projects = () => {
   return (
@@ -27,7 +27,7 @@ const Projects = () => {
                   {project.title}
                 </HeadingSecondary>
                 <DescriptionText>{project.descriptionShort}</DescriptionText>
-                <ButtonTransparent>View Project</ButtonTransparent>
+                <LinkR to={`/project/${project.id}`}>View Project</LinkR>
               </ProjectsColRight>
             </ProjectsCols>
           );
