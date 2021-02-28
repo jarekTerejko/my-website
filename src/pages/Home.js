@@ -1,16 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Hero from "../components/Hero";
 import About from "../components/SectionAbout";
 import Question from "../components/SectionQuestion";
-import { useState, useEffect } from "react";
 import Loader from "../components/Loader";
-import NotFound from "../components/NotFound";
 
 const Home = () => {
   const [texts, setTexts] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-
-  console.log(texts);
 
   const getData = async () => {
     try {
@@ -37,18 +33,17 @@ const Home = () => {
     // }
   }, []);
 
-  if (isLoading) {
-    return <Loader />;
-  }
-
-  return texts ? (
+  return (
     <>
-      <Hero heroText={texts.heroText} />
-      <About aboutText={texts.aboutText} />
-      <Question />
+      {isLoading ? <Loader /> : null}
+      {texts ? (
+        <>
+          <Hero heroText={texts.heroText} />
+          <About aboutText={texts.aboutText} />
+          <Question />
+        </>
+      ) : null}
     </>
-  ) : (
-    <NotFound />
   );
 };
 
