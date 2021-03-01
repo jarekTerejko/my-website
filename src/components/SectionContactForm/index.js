@@ -45,6 +45,14 @@ const ContactForm = () => {
     );
   };
 
+  const clearInputs = () => {
+    setInputValues({
+      firstName: "",
+      email: "",
+      msg: "",
+    });
+  };
+
   const handleSubmit = (e) => {
     setIsSubmited(true);
     if (
@@ -59,11 +67,11 @@ const ContactForm = () => {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...inputValues }),
-      })
-        .then(() => alert("Success!"))
-        .catch((error) => alert(error));
+      }).catch((error) => alert(error));
 
       e.preventDefault();
+      setIsSubmited(false);
+      clearInputs();
     }
   };
 
