@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Loader from "../components/Loader";
-import NotFound from "../components/NotFound";
+import ContactForm from "../components/SectionContactForm";
 import ContactIntro from "../components/SectionContactIntro";
 
 const Contact = () => {
   const [contactData, setContactData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-
-  console.log(contactData);
 
   const getData = async () => {
     try {
@@ -34,14 +32,17 @@ const Contact = () => {
     // }
   }, []);
 
-  if (isLoading) {
-    return <Loader />;
-  }
-
-  return contactData ? 
-  <>
-    <ContactIntro contactData={contactData} />
-  </> : <NotFound />;
+  return (
+    <>
+      {isLoading ? <Loader /> : null}
+      {contactData ? (
+        <>
+          <ContactIntro contactData={contactData} />
+          <ContactForm />
+        </>
+      ) : null}
+    </>
+  );
 };
 
 export default Contact;

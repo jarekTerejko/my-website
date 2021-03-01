@@ -11,6 +11,10 @@ export const ContactIntroCols = styled.section`
   gap: 30px;
   position: relative;
 
+  @media screen and (max-width: 650px) {
+    display: block;
+  }
+
   &::before,
   &::after {
     content: "";
