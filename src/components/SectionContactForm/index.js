@@ -16,6 +16,8 @@ import {
   ChevronsRightIcon,
 } from "./SectionFormElements";
 import ChevronsIcon from "../../images/contact/chevrons-right.svg";
+import Modal from "../Modal";
+
 const ContactForm = () => {
   const [inputValues, setInputValues] = useState({
     firstName: "",
@@ -23,6 +25,7 @@ const ContactForm = () => {
     msg: "",
   });
   const [isSubmited, setIsSubmited] = useState(false);
+  const [isModal, setIsModal] = useState(false);
 
   const encode = (data) => {
     return Object.keys(data)
@@ -53,6 +56,10 @@ const ContactForm = () => {
     });
   };
 
+  const closeModal = () => {
+    setIsModal(!isModal);
+  };
+
   const handleSubmit = (e) => {
     setIsSubmited(true);
     if (
@@ -72,78 +79,82 @@ const ContactForm = () => {
       e.preventDefault();
       setIsSubmited(false);
       clearInputs();
+      setIsModal(!isModal);
     }
   };
 
   return (
-    <ContactFormWrapper>
-      <WrapperEl>
-        <ContactFormCols>
-          <ContactFormColLeft>
-            <HeroHeading as="h2">Kontakt</HeroHeading>
-          </ContactFormColLeft>
-          <ContactFormColRight>
-            <ContactFormEl onSubmit={handleSubmit}>
-              <ContactFormRow>
-                <ContactFormLabel htmlFor="firstName">Imię</ContactFormLabel>
-                <ContactFormTextInput
-                  type="text"
-                  name="firstName"
-                  value={inputValues.firstName}
-                  onChange={(e) => handleInputChange(e)}
-                  placeholder="John Doe"
-                />
-                {isSubmited && !inputValues.firstName && (
-                  <ContactFormErrorMsg>
-                    To pole nie może pozostać puste
-                  </ContactFormErrorMsg>
-                )}
-              </ContactFormRow>
-              <ContactFormRow>
-                <ContactFormLabel htmlFor="email">Email</ContactFormLabel>
-                <ContactFormTextInput
-                  type="text"
-                  name="email"
-                  value={inputValues.email}
-                  onChange={(e) => handleInputChange(e)}
-                  placeholder="email@examle.com"
-                />
-                {isSubmited && !inputValues.email && (
-                  <ContactFormErrorMsg>
-                    To pole nie może pozostać puste
-                  </ContactFormErrorMsg>
-                )}
-                {isSubmited &&
-                  inputValues.email &&
-                  !isMailValid(inputValues.email) && (
+    <>
+      {isModal ? <Modal closeModal={closeModal} /> : null}
+      <ContactFormWrapper>
+        <WrapperEl>
+          <ContactFormCols>
+            <ContactFormColLeft>
+              <HeroHeading as="h2">Kontakt</HeroHeading>
+            </ContactFormColLeft>
+            <ContactFormColRight>
+              <ContactFormEl onSubmit={handleSubmit}>
+                <ContactFormRow>
+                  <ContactFormLabel htmlFor="firstName">Imię</ContactFormLabel>
+                  <ContactFormTextInput
+                    type="text"
+                    name="firstName"
+                    value={inputValues.firstName}
+                    onChange={(e) => handleInputChange(e)}
+                    placeholder="John Doe"
+                  />
+                  {isSubmited && !inputValues.firstName && (
                     <ContactFormErrorMsg>
-                      Sprawdź poprawność podanego adresu email
+                      To pole nie może pozostać puste
                     </ContactFormErrorMsg>
                   )}
-              </ContactFormRow>
-              <ContactFormRow>
-                <ContactFormLabel htmlFor="msg">Wiadomość</ContactFormLabel>
-                <ContactFormTextarea
-                  value={inputValues.msg}
-                  onChange={(e) => handleInputChange(e)}
-                  name="msg"
-                  placeholder="Jak mogę pomóc?"
-                ></ContactFormTextarea>
-                {isSubmited && !inputValues.msg && (
-                  <ContactFormErrorMsg>
-                    To pole nie może pozostać puste
-                  </ContactFormErrorMsg>
-                )}
-              </ContactFormRow>
-              <ContactFormSubmitBtn type="submit" as="button">
-                Wyślij
-                <ChevronsRightIcon src={ChevronsIcon} />
-              </ContactFormSubmitBtn>
-            </ContactFormEl>
-          </ContactFormColRight>
-        </ContactFormCols>
-      </WrapperEl>
-    </ContactFormWrapper>
+                </ContactFormRow>
+                <ContactFormRow>
+                  <ContactFormLabel htmlFor="email">Email</ContactFormLabel>
+                  <ContactFormTextInput
+                    type="text"
+                    name="email"
+                    value={inputValues.email}
+                    onChange={(e) => handleInputChange(e)}
+                    placeholder="email@examle.com"
+                  />
+                  {isSubmited && !inputValues.email && (
+                    <ContactFormErrorMsg>
+                      To pole nie może pozostać puste
+                    </ContactFormErrorMsg>
+                  )}
+                  {isSubmited &&
+                    inputValues.email &&
+                    !isMailValid(inputValues.email) && (
+                      <ContactFormErrorMsg>
+                        Sprawdź poprawność podanego adresu email
+                      </ContactFormErrorMsg>
+                    )}
+                </ContactFormRow>
+                <ContactFormRow>
+                  <ContactFormLabel htmlFor="msg">Wiadomość</ContactFormLabel>
+                  <ContactFormTextarea
+                    value={inputValues.msg}
+                    onChange={(e) => handleInputChange(e)}
+                    name="msg"
+                    placeholder="Jak mogę pomóc?"
+                  ></ContactFormTextarea>
+                  {isSubmited && !inputValues.msg && (
+                    <ContactFormErrorMsg>
+                      To pole nie może pozostać puste
+                    </ContactFormErrorMsg>
+                  )}
+                </ContactFormRow>
+                <ContactFormSubmitBtn type="submit" as="button">
+                  Wyślij
+                  <ChevronsRightIcon src={ChevronsIcon} />
+                </ContactFormSubmitBtn>
+              </ContactFormEl>
+            </ContactFormColRight>
+          </ContactFormCols>
+        </WrapperEl>
+      </ContactFormWrapper>
+    </>
   );
 };
 
