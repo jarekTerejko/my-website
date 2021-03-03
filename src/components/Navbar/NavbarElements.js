@@ -57,15 +57,16 @@ export const NavbarNavItems = styled.ul`
   @media screen and (max-width: 550px) {
     position: fixed;
     transform: ${(props) =>
-      props.$isOpen ? `translateX(0)` : "translateX(-100%)"};
+      props.$isOpen ? `translateX(0)` : "translateX(-110%)"};
     left: 0;
-    top: 80px;
+    top: 60px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: var(--color-very-light-gray);
     width: 80%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 60px);
+    box-shadow: 1px 10px 8px 1px rgba(0, 0, 0, 0.2);
   }
 `;
 
