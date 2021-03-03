@@ -1,4 +1,3 @@
-import { dataProjects } from "../../data.js";
 import { WrapperEl } from "../Wrapper/WrapperElement";
 import {
   ProjectsColLeft,
@@ -10,11 +9,11 @@ import { HeadingSecondary } from "../HeadingSecondary/HeadingSecondaryElement";
 import { DescriptionText } from "../DecriptionText/DescriptionTextElement";
 import { LinkR } from "../Link/LinkElement.js";
 
-const Projects = () => {
+const Projects = ({ portfolioProjects }) => {
   return (
     <ProjectsWrapper>
       <WrapperEl>
-        {dataProjects.map((project, i, arr) => {
+        {portfolioProjects.map((project, i) => {
           return (
             <ProjectsCols key={i}>
               <ProjectsColLeft
