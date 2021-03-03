@@ -63,7 +63,7 @@ export const HeroHeadingWrapper = styled.div`
   @media screen and (max-width: 425px) {
     position: static;
     max-width: 100%;
-    padding-top: 3.5rem;
+    padding-top: 4.5rem;
   }
 `;
 
@@ -88,5 +88,6 @@ export const HeroHeading = styled.h1`
 
   @media screen and (max-width: 425px) {
     font-size: 2.6rem;
+    margin-bottom: 3rem;
   }
 `;
