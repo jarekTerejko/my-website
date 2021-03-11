@@ -5,7 +5,7 @@ import NotFound from "../NotFound";
 import ChevronLeft from "../../images/project/chevron-left.svg";
 import ChevronRight from "../../images/project/chevron-right.svg";
 import { useParams } from "react-router-dom";
-import Loader from '../Loader';
+import Loader from "../Loader";
 import {
   ProjectDetailsColLeft,
   ProjectDetailsColRight,
@@ -24,25 +24,25 @@ import { WrapperEl } from "../Wrapper/WrapperElement";
 import { HeadingSecondary } from "../HeadingSecondary/HeadingSecondaryElement";
 import { DescriptionText } from "../DecriptionText/DescriptionTextElement";
 import { ButtonTransparent } from "../ButtonTransparent/ButtonTransparentElement";
-import Question from '../SectionQuestion'
+import Question from "../SectionQuestion";
+import { Tag } from "../Tag/TagElement";
 
 const ProjectDetails = () => {
   const { id } = useParams();
+  const [index, setIndex] = useState(null);
+  const [dataProject, setDataProject] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setIndex(parseInt(id) - 1);
     setDataProject(dataProjects[parseInt(id) - 1]);
-    setLoading(false);
+    setIsLoading(false);
     // return () => {
     //   cleanup
     // }
   }, [id]);
 
-  const [index, setIndex] = useState(null);
-  const [dataProject, setDataProject] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  if (loading) {
+  if (isLoading) {
     return <Loader />;
   }
 
@@ -59,7 +59,26 @@ const ProjectDetails = () => {
                 {dataProject.title}
               </HeadingSecondary>
               <DescriptionText>{dataProject.descriptionShort}</DescriptionText>
-
+              <DescriptionText style={{ marginBottom: "1rem" }}>
+                {dataProject.languages.map((lang, i, arr) => {
+                  return (
+                    <Tag key={i}>
+                      {lang.toUpperCase()}
+                      {i + 1 < arr.length ? " / " : ""}
+                    </Tag>
+                  );
+                })}
+              </DescriptionText>
+              <DescriptionText>
+                {dataProject.tools.map((tool, i, arr) => {
+                  return (
+                    <Tag key={i}>
+                      {tool}
+                      {i + 1 < arr.length ? " / " : ""}
+                    </Tag>
+                  );
+                })}
+              </DescriptionText>
               <ButtonTransparent
                 as="a"
                 target="_blank"
