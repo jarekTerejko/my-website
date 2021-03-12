@@ -22,8 +22,15 @@ export const LoaderWrapper = styled(motion.div)`
   align-items: center;
   justify-content: center;
   /* background: rgba(0, 0, 0, 0.99); */
-  background: rgba(255, 255, 255, 0.99);
+  /* background: rgba(255, 255, 255, 0.99); */
+  background: var(--color-very-light-gray);
+  transform: translateY(120px);
+
+  @media screen and (max-width: 550px) {
+    transform: translateY(60px);
+  }
 `;
+
 export const LoaderCircle = styled.div`
   display: inline-block;
   width: 80px;
