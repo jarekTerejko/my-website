@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
 
 const rotate = keyframes`
   from {
@@ -9,7 +10,7 @@ const rotate = keyframes`
   }
 `;
 
-export const LoaderWrapper = styled.div`
+export const LoaderWrapper = styled(motion.div)`
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -20,7 +21,8 @@ export const LoaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.8);
+  /* background: rgba(0, 0, 0, 0.99); */
+  background: rgba(255, 255, 255, 0.99);
 `;
 export const LoaderCircle = styled.div`
   display: inline-block;
@@ -34,8 +36,8 @@ export const LoaderCircle = styled.div`
     height: 64px;
     margin: 8px;
     border-radius: 50%;
-    border: 6px solid #fff;
-    border-color: #fff transparent #fff transparent;
+    border: 6px solid #000;
+    border-color: #000 transparent #000 transparent;
     animation: ${rotate} 1.2s linear infinite;
   }
 `;
