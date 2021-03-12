@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Loader from "../components/Loader";
 import ContactForm from "../components/SectionContactForm";
 import ContactIntro from "../components/SectionContactIntro";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [contactData, setContactData] = useState(null);
@@ -32,14 +33,34 @@ const Contact = () => {
     // }
   }, []);
 
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: { delay: 0.1, duration: 1 },
+    },
+    exit: {
+      x: "-100vw",
+      opacity: 0,
+      transition: { ease: "easeInOut" },
+    },
+  };
+
   return (
     <>
       {isLoading ? <Loader /> : null}
       {contactData ? (
-        <>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+        >
           <ContactIntro contactData={contactData} />
           <ContactForm />
-        </>
+        </motion.div>
       ) : null}
     </>
   );

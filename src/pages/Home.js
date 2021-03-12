@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import About from "../components/SectionAbout";
 import Question from "../components/SectionQuestion";
 import Loader from "../components/Loader";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const [texts, setTexts] = useState(null);
@@ -33,15 +34,35 @@ const Home = () => {
     // }
   }, []);
 
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: { delay: 0.1, duration: 1 },
+    },
+    exit: {
+      x: "-100vw",
+      opacity: 0,
+      transition: { ease: "easeInOut" },
+    },
+  };
+
   return (
     <>
       {isLoading ? <Loader /> : null}
       {texts ? (
-        <>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+        >
           <Hero heroText={texts.heroText} />
           <About aboutText={texts.aboutText} />
           <Question />
-        </>
+        </motion.div>
       ) : null}
     </>
   );
