@@ -36,7 +36,10 @@ const App = () => {
         isOpen={isOpen}
       />
       <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.key}>
+        <Switch 
+        location={location} 
+        key={location.pathname}
+        >
           <Route path="/" exact>
             <Home />
           </Route>
