@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -7,9 +7,11 @@ import Portfolio from "./pages/Portfolio";
 import Project from "./pages/Project";
 import NotFound from "./components/NotFound";
 import Contact from "./pages/Contact";
+import { AnimatePresence } from "framer-motion";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
@@ -27,14 +29,14 @@ const App = () => {
 
   return (
     <>
-      <Router>
-        <Navbar
-          scrolledNav={scrolledNav}
-          changeNav={changeNav}
-          handleMenu={handleMenu}
-          isOpen={isOpen}
-        />
-        <Switch>
+      <Navbar
+        scrolledNav={scrolledNav}
+        changeNav={changeNav}
+        handleMenu={handleMenu}
+        isOpen={isOpen}
+      />
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.key}>
           <Route path="/" exact>
             <Home />
           </Route>
@@ -51,8 +53,8 @@ const App = () => {
             <NotFound />
           </Route>
         </Switch>
-        <Footer />
-      </Router>
+      </AnimatePresence>
+      <Footer />
     </>
   );
 };
