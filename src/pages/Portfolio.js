@@ -7,6 +7,23 @@ import { motion } from "framer-motion";
 const Portfolio = () => {
   const [portfolioProjects, setPortfolioProjects] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [filteredProjects, setFilteredProjects] = useState([]);
+
+  const addFilter = (e) => {
+    if (!filteredProjects.includes(e.target.innerText.toLowerCase())) {
+      setFilteredProjects([
+        ...filteredProjects,
+        e.target.innerText.toLowerCase(),
+      ]);
+    }
+  };
+
+  const removeFilter = (btn) => {
+    const newFilters = filteredProjects.filter((project) => {
+      return project !== btn;
+    });
+    setFilteredProjects(newFilters);
+  };
 
   useEffect(() => {
     // setIsLoading(true)
@@ -42,7 +59,12 @@ const Portfolio = () => {
           animate="visible"
           exit="exit"
         >
-          <Projects portfolioProjects={portfolioProjects} />
+          <Projects
+            portfolioProjects={portfolioProjects}
+            filteredProjects={filteredProjects}
+            addFilter={addFilter}
+            removeFilter={removeFilter}
+          />
         </motion.div>
       ) : null}
     </>
