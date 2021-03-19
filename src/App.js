@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Portfolio from "./pages/Portfolio";
 import Project from "./pages/Project";
 import NotFound from "./components/NotFound";
@@ -52,7 +51,6 @@ const App = () => {
           <Route path="*">
             <NotFound />
           </Route>
-          <Footer />
         </Switch>
       </AnimatePresence>
     </>

@@ -1,5 +1,6 @@
 import ProjectDetails from "../components/ProjectDetails";
 import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 
 const Project = () => {
   const containerVariants = {
@@ -25,6 +26,7 @@ const Project = () => {
         exit="exit"
       >
         <ProjectDetails />
+        <Footer />
       </motion.div>
     </>
   );

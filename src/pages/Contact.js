@@ -3,6 +3,7 @@ import Loader from "../components/Loader";
 import ContactForm from "../components/SectionContactForm";
 import ContactIntro from "../components/SectionContactIntro";
 import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   const [contactData, setContactData] = useState(null);
@@ -59,6 +60,7 @@ const Contact = () => {
         >
           <ContactIntro contactData={contactData} />
           <ContactForm />
+          <Footer />
         </motion.div>
       ) : null}
     </>

@@ -4,6 +4,7 @@ import About from "../components/SectionAbout";
 import Question from "../components/SectionQuestion";
 import Loader from "../components/Loader";
 import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [texts, setTexts] = useState(null);
@@ -61,6 +62,7 @@ const Home = () => {
           <Hero heroText={texts.heroText} />
           <About aboutText={texts.aboutText} />
           <Question />
+          <Footer />
         </motion.div>
       ) : null}
     </>

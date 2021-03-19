@@ -3,6 +3,7 @@ import { dataProjects } from "../data";
 import Projects from "../components/Projects";
 import Loader from "../components/Loader";
 import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 
 const Portfolio = () => {
   const [portfolioProjects, setPortfolioProjects] = useState(null);
@@ -64,6 +65,7 @@ const Portfolio = () => {
             addFilter={addFilter}
             removeFilter={removeFilter}
           />
+          <Footer />
         </motion.div>
       ) : null}
     </>
