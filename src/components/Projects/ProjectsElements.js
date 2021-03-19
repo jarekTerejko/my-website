@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const ProjectsWrapper = styled.main`
   margin-top: 14rem;
 `;
 export const ProjectsInnerWrapper = styled.section``;
 
-export const ProjectsCols = styled.article`
+export const ProjectsCols = styled(motion.article)`
   padding: 5rem 0;
   display: grid;
   gap: 30px;
