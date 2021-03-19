@@ -42,7 +42,6 @@ const Contact = () => {
       transition: { delay: 0.1, duration: 1 },
     },
     exit: {
-      x: "-100vw",
       opacity: 0,
       transition: { ease: "easeInOut" },
     },

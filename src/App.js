@@ -36,10 +36,7 @@ const App = () => {
         isOpen={isOpen}
       />
       <AnimatePresence exitBeforeEnter>
-        <Switch 
-        location={location} 
-        key={location.pathname}
-        >
+        <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
             <Home />
           </Route>
@@ -55,9 +52,9 @@ const App = () => {
           <Route path="*">
             <NotFound />
           </Route>
+          <Footer />
         </Switch>
       </AnimatePresence>
-      <Footer />
     </>
   );
 };
