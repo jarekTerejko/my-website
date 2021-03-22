@@ -184,7 +184,7 @@ export const dataProjects = [
       img5: PayApi5,
       img6: PayApi6,
     },
-    title: "Photosnap",
+    title: "PayApi",
     descriptionShort:
       "This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
     descriptionLong:
