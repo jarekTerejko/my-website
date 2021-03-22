@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {NavbarSiteLinkR} from '../Navbar/NavbarElements'
+import { NavbarSiteLinkR } from "../Navbar/NavbarElements";
 
 export const ProjectDetailsWrapper = styled.section`
   margin-top: 14rem;
@@ -14,12 +14,20 @@ export const ProjectDetailsIntroBgImg = styled.div`
   background-position: center;
   background-size: cover;
   margin-bottom: 11.5rem;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 5rem;
+  }
 `;
 
 export const ProjectDetailsCols = styled.article`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 60px;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 `;
 
 export const ProjectDetailsColLeft = styled.div`
@@ -35,8 +43,8 @@ export const ProjectDetailsColLeftInner = styled.div`
   position: relative;
   padding: 5rem 2rem 5rem 0;
 
-  @media screen and (max-width: 600px) {
-    padding: 0rem 0rem 5rem 0;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 5rem;
   }
 
   &::before,
@@ -48,11 +56,6 @@ export const ProjectDetailsColLeftInner = styled.div`
     height: 1px;
     width: calc(100% - 20px);
     background: var(--color-border-gray);
-
-    @media screen and (max-width: 600px) {
-      left: 0;
-      width: 100%;
-    }
   }
 
   &::after {
@@ -69,38 +72,48 @@ export const ProjectDetailsIntroText = styled.h3`
   color: var(--color-grayish-dark-blue);
 `;
 
-
-
 export const ProjectDetailsLinksWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 5rem;
-`
+`;
 export const ProjectDetailsLinkLeftWrapper = styled.div`
-    border: 1px solid var(--color-border-gray);
-    border-right-width: .5px; 
-    border-left: none;
-  padding: 3rem 0;
+  border: 1px solid var(--color-border-gray);
+  border-right-width: 0.5px;
+  border-left: none;
+  padding: 3rem 1rem 3rem 0;
   display: flex;
   align-self: flex-start;
-`
+`;
 export const ProjectDetailsLinkRightWrapper = styled.div`
   border: 1px solid var(--color-border-gray);
-  border-left-width: .5px;
+  border-left-width: 0.5px;
   border-right: none;
-  padding: 3rem 0;
+  padding: 3rem 0 3rem 1rem;
   display: flex;
   justify-content: flex-end;
-  
-`
+`;
 
 export const ProjectDetailsLink = styled(NavbarSiteLinkR)`
-display: flex;
-align-items: center;
-  `
+  display: flex;
+  align-items: center;
+`;
+
+export const ProjectDetailsName = styled(ProjectDetailsIntroText)`
+  @media screen and (max-width: 650px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 350px) {
+    font-size: 1.6rem;
+  }
+`;
 
 export const ProjectDetailsLinkText = styled.span`
-font-size: 1.4rem;
-color: var(--color-form-input-place-holder);
-text-transform: capitalize;
-`
+  font-size: 1.4rem;
+  color: var(--color-form-input-place-holder);
+  text-transform: capitalize;
+
+  @media screen and (max-width: 350px) {
+    font-size: 1.2rem;
+  }
+`;

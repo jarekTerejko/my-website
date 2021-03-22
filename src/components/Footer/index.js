@@ -1,7 +1,6 @@
 import { ImageEl } from "../Image/ImageElement";
 import {
   NavbarNavItem,
-  NavbarNavItems,
   NavbarNavLinkR,
   NavbarSiteLinkR,
 } from "../Navbar/NavbarElements";

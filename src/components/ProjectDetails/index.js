@@ -19,6 +19,7 @@ import {
   ProjectDetailsLinkLeftWrapper,
   ProjectDetailsLinkRightWrapper,
   ProjectDetailsLinkText,
+  ProjectDetailsName,
 } from "./ProjectDetailsElements";
 import { WrapperEl } from "../Wrapper/WrapperElement";
 import { HeadingSecondary } from "../HeadingSecondary/HeadingSecondaryElement";
@@ -55,7 +56,7 @@ const ProjectDetails = () => {
         <ProjectDetailsCols>
           <ProjectDetailsColLeft>
             <ProjectDetailsColLeftInner>
-              <HeadingSecondary marginBottom="4rem">
+              <HeadingSecondary marginBottom="3rem">
                 {dataProject.title}
               </HeadingSecondary>
               <DescriptionText>{dataProject.descriptionShort}</DescriptionText>
@@ -123,11 +124,11 @@ const ProjectDetails = () => {
             >
               <ImageEl style={{ marginRight: "1rem" }} src={ChevronLeft} />
               <div>
-                <ProjectDetailsIntroText style={{ marginBottom: ".5rem" }}>
+                <ProjectDetailsName style={{ marginBottom: ".5rem" }}>
                   {index === 0
                     ? `${dataProjects[dataProjects.length - 1].title}`
                     : `${dataProjects[index - 1].title}`}
-                </ProjectDetailsIntroText>
+                </ProjectDetailsName>
                 <ProjectDetailsLinkText>
                   Previous project
                 </ProjectDetailsLinkText>
@@ -141,11 +142,11 @@ const ProjectDetails = () => {
               }`}
             >
               <div style={{ textAlign: "right" }}>
-                <ProjectDetailsIntroText style={{ marginBottom: ".5rem" }}>
+                <ProjectDetailsName style={{ marginBottom: ".5rem" }}>
                   {index === dataProjects.length - 1
                     ? `${dataProjects[0].title}`
                     : `${dataProjects[index + 1].title}`}
-                </ProjectDetailsIntroText>
+                </ProjectDetailsName>
                 <ProjectDetailsLinkText>Next project</ProjectDetailsLinkText>
               </div>
               <ImageEl style={{ marginLeft: "1rem" }} src={ChevronRight} />
