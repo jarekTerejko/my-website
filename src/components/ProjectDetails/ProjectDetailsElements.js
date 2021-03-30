@@ -72,6 +72,16 @@ export const ProjectDetailsIntroText = styled.h3`
   color: var(--color-grayish-dark-blue);
 `;
 
+export const ProjectDetailsGoalsList = styled.ul`
+  list-style: none;
+  margin-bottom: 3rem;
+`;
+export const ProjectDetailsGoalsListItems = styled.li`
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+`;
+
 export const ProjectDetailsLinksWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;

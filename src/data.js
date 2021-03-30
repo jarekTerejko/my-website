@@ -65,10 +65,11 @@ export const dataProjects = [
       img6: Manage6,
     },
     title: "Manage",
+    goals: ["responsywność", "walidacja formularza", "mobilne menu", "Slider"],
     descriptionShort:
-      "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
+      "Projekt wymagał ode mnie zbudowania w pełni resposywnej strony typu landing-page. Cel ten osiągnąłem dzięki użyciu znaczników HTML5 oraz definiowaniu styli z preprocesorem Sass (SCSS). Za interakcje odpowiada JavaScript (ES6)",
     descriptionLong:
-      "This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana strona jest w pełni responsywna. Elementy, zdjęcia, czcionki, kolumny oraz cały layout płynnie dostosowuje się do szerokości viewportu. Pojawianie się mobilnego menu to zasługa własciwości transform i zmiana wartości scale. Sekcja Testimonials opiera sie na zewnętrznej wtyczce Swiper, której ogromną zaletą jest działanie bez jQuery. Pole na adres email posiada podstawową walidację po stronie przeglądarki. Całość dopełnia użycie preprocesora Sass wespół z metodologią BEM.",
     siteUrl: "https://manage-landing-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/manage-landing-page",
     languages: ["html", "css", "JavaScript"],
@@ -85,10 +86,17 @@ export const dataProjects = [
       img6: Bookmark6,
     },
     title: "Bookmark",
+    goals: [
+      "responsywność",
+      "walidacja formularza",
+      "mobilne menu",
+      "interatywna Sekcja Features",
+      "interatywna Sekcja FAQ",
+    ],
     descriptionShort:
-      "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.",
+      "Projekt wymagał ode mnie zbudowania w pełni resposywnej strony typu landing-page. Cel ten osiągnąłem dzięki użyciu znaczników HTML5 oraz definiowaniu styli z preprocesorem Sass (SCSS). Za interakcje odpowiada JavaScript (ES6).",
     descriptionLong:
-      "This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana strona jest w pełni responsywna. Elementy, zdjęcia, czcionki, kolumny oraz cały layout płynnie dostosowuje się do szerokości viewportu. Widok dla telefonów posiada wysuwane menu. Niewątpliwą zaletą tego projektu są elementy, które bardzo często goszczą na stronach internetowych (Taby i FAQ). Konieczność storzenia ich od zera oraz zaplanowania logiki ich działania pozwoliło w praktyce zastosować: trawersowanie po węzłach drzewa DOM, dynamicznie dodawać i usuwać klasy odpowiedzialne za wygląd w określonym stanie. Całość dopełnia użycie preprocesora Sass wespół z metodologią BEM.",
     siteUrl: "https://bookmark-landing-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/bookmark-landing-page",
     languages: ["html", "css", "JavaScript"],
@@ -125,10 +133,16 @@ export const dataProjects = [
       img6: Fylo6,
     },
     title: "Fylo",
+    goals: [
+      "responsywność",
+      "mobilne menu",
+      "walidacja formularza",
+      "animacja podczas scrollowania",
+    ],
     descriptionShort:
-      "This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
+      "Projekt wymagał ode mnie zbudowania w pełni resposywnej strony typu landing-page. Cel ten osiągnąłem dzięki użyciu znaczników HTML5 oraz definiowaniu styli z preprocesorem Sass (SCSS). Za interakcje odpowiada JavaScript (ES6).",
     descriptionLong:
-      "This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana strona jest w pełni responsywna, posiada przejrzysty układ, popularne obecnie ilustracje oraz ikony SVG oraz wysuwane menu dla telefonów. Tym co ją wyróżnia jest animacja pojawiania się poszczególnych elementów podczas scrollowania. Pole na adres email posiada podstawową walidację po stronie przeglądarki. Całość dopełnia użycie preprocesora Sass wespół z metodologią BEM.",
     siteUrl: "https://fylo-landing-page-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/fylo-dark-theme-landing-page",
     languages: ["html", "css", "JavaScript"],
@@ -145,10 +159,17 @@ export const dataProjects = [
       img6: Photosnap6,
     },
     title: "Photosnap",
+    goals: [
+      "multi-page",
+      "responsywność",
+      "animowany loader",
+      "mobilne menu",
+      "dynamiczna zmiana treści",
+    ],
     descriptionShort:
-      "This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
+      "Projekt wymagał ode mnie zbudowania w pełni resposywnej witryny typu multi-page. Cel ten osiągnąłem dzięki użyciu znaczników HTML5 oraz definiowaniu styli z preprocesorem Sass (SCSS). Za interakcje odpowiada JavaScript (ES6).",
     descriptionLong:
-      "This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana witryna typu multi-page składa sie z czterech stron i jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Tym co wyróżnia ten projekt jest piękny design z wieloma zdjęciami. Niektóre z elementów powtarzają się na różnych stronach. Hołdując zasadzie DRY, raz zdefiniowane dla nich klasy są następnie reużywane. JavaScript odpowiada za dynamiczną zmianę treści w zależności od stanu chexboxa na stronie PRICING. Całość dopełnia użycie preprocesora Sass wespół z metodologią BEM.",
     siteUrl: "https://photosnap-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/fem-photosnap",
     languages: ["html", "css", "JavaScript"],
@@ -165,10 +186,19 @@ export const dataProjects = [
       img6: MoviesList6,
     },
     title: "Movie Lists",
+    goals: [
+      "SPA",
+      "komunikacja z API",
+      "responsywność",
+      "animowany loader",
+      "Styled Components",
+      "dane zapisywane w Local Storage",
+      "dynamiczna zmiana treści",
+    ],
     descriptionShort:
-      "This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
+      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Aplikacja komunikuje się z The Movie Database API.",
     descriptionLong:
-      "This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+      "Projekt ten jest rozwinięciem tutorialu napotkanego w sieci. Inspiracją na design była strona NETFLIX. Zbudowana aplikacja jest w pełni responsywna. Napisanie aplikacji, która pozwala wyszukać tytuł filmu, wyświetlić o nim podstawowe informacje, a nawet zapisać wyszukiwania do listy ulubionych lub do obejrzenia w przyszłości daje prawdziwą satysfakcję, uczy i rozwija. Co ważne dane zapisawane są w Local Storage, więc stworzone listy są dostępne nawet po zamknięciu karty i ponownym odwiedzeniu adresu w przeglądarce.",
     siteUrl: "https://movie-lists-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/movie-lists-react",
     languages: ["JavaScript"],
@@ -185,10 +215,17 @@ export const dataProjects = [
       img6: PayApi6,
     },
     title: "PayApi",
+    goals: [
+      "SPA",
+      "responsywność",
+      "React Router",
+      "Styled Components",
+      "walidacja formularza",
+    ],
     descriptionShort:
-      "This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
+      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Za routing odpowiada React Router.",
     descriptionLong:
-      "This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA  składa sie z czterech stron i jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Nawigacja pomiędzy stronami to zasługa React Router. W tym projekcie po raz pierwszy użyłem Styled Components. Walidacja formularza po stronie klienta (bez użycia zewnętrzenj biblioteki) wraz z podpowiedziami dla użytkownika zapobiega przesłaniu niepełnych lub błędnyh danych.",
     siteUrl: "https://pay-api-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/fem-pay-api",
     languages: ["JavaScript"],
@@ -205,10 +242,17 @@ export const dataProjects = [
       img6: Todo6,
     },
     title: "Todo",
+    goals: [
+      "responsywność",
+      "drag and drop",
+      "edycja zadań",
+      "Styled Components",
+      "dark mode / light mode",
+    ],
     descriptionShort:
-      "This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
+      "Projekt wymagał ode mnie zbudowania aplikacji TODO. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Korzystający z niej dostaje kilka ciekawych opcji, których próżno szukać w innych tego typu...",
     descriptionLong:
-      "This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna. Dodane zadania można zobaczyć, w zależności od ich stanu w jednym z trzech widoków. Są one zapisywane do Local Storage. W każdej chwili można również dowolnie edytować ich treść. Dostępna jest opcja przełączania się pomiędzy: dark mode / light mode. Tym co wyróżnia tę aplikację jest opcja Drag and drop (dostępna wyłącznie w widoku All) pozwalająca zmienić kolejność zadań ww. metodą.",
     siteUrl: "https://todo-app-terejko.netlify.app",
     gitHubUrl:
       "https://github.com/jarekTerejko/fem-challenges-solutions/tree/main/todo-app-main",
@@ -226,10 +270,18 @@ export const dataProjects = [
       img6: Clock6,
     },
     title: "Clock",
+    goals: [
+      "responsywność",
+      "animowany loader",
+      "Styled Components",
+      "komunikacja z dwoma API",
+      "losowy wybór cytatu",
+      "dynamiczna zmiana treści",
+    ],
     descriptionShort:
-      "This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
+      "Projekt wymagał ode mnie zbudowania aplikacji Clock. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Aplikacja komunikuje się z dwoma API.",
     descriptionLong:
-      "This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna. Głównym zadaniem aplikacji jest wyświetlenie aktualnego czasu oraz przybliżonej lokalizacji użytkownika w oparciu o jego publiczne ip. Dodatkowe informacje o aktulnej dacie i strefie czasowej dostępne są o podatkowej interakcji. W górnej części aplikacji pojawia się losowo wyświetlany cytat (możliwa jest zmiana na kolejne). W zależności od pory dnia aplikacja wyświetla odpowiedni komunikat powitalny oraz zmienia zdjęcie w tle.",
     siteUrl: "https://clock-app-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/clock-api-ip-app",
     languages: ["JavaScript"],

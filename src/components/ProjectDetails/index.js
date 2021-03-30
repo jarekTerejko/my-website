@@ -4,6 +4,7 @@ import { ImageEl } from "../Image/ImageElement";
 import NotFound from "../NotFound";
 import ChevronLeft from "../../images/project/chevron-left.svg";
 import ChevronRight from "../../images/project/chevron-right.svg";
+import Check from "../../images/project/check.svg";
 import { useParams } from "react-router-dom";
 import Loader from "../Loader";
 import {
@@ -20,6 +21,8 @@ import {
   ProjectDetailsLinkRightWrapper,
   ProjectDetailsLinkText,
   ProjectDetailsName,
+  ProjectDetailsGoalsList,
+  ProjectDetailsGoalsListItems,
 } from "./ProjectDetailsElements";
 import { WrapperEl } from "../Wrapper/WrapperElement";
 import { HeadingSecondary } from "../HeadingSecondary/HeadingSecondaryElement";
@@ -59,7 +62,22 @@ const ProjectDetails = () => {
               <HeadingSecondary marginBottom="3rem">
                 {dataProject.title}
               </HeadingSecondary>
-              <DescriptionText>{dataProject.descriptionShort}</DescriptionText>
+              <ProjectDetailsGoalsList>
+                {dataProject.goals
+                  ? dataProject.goals.map((goal) => {
+                      return (
+                        <ProjectDetailsGoalsListItems key={goal}>
+                          <ImageEl
+                            src={Check}
+                            style={{ marginRight: ".8rem" }}
+                            alt=""
+                          />
+                          {goal}
+                        </ProjectDetailsGoalsListItems>
+                      );
+                    })
+                  : null}
+              </ProjectDetailsGoalsList>
               <DescriptionText style={{ marginBottom: "1rem" }}>
                 {dataProject.languages.map((lang, i, arr) => {
                   return (
@@ -85,13 +103,13 @@ const ProjectDetails = () => {
                 target="_blank"
                 href={dataProject.gitHubUrl}
               >
-                Visit github
+                Github
               </ButtonTransparent>
             </ProjectDetailsColLeftInner>
           </ProjectDetailsColLeft>
           <ProjectDetailsColRight>
             <ProjectDetailsIntroText style={{ marginBottom: "4rem" }}>
-              Project background
+              Opis
             </ProjectDetailsIntroText>
             <DescriptionText>{dataProject.descriptionLong}</DescriptionText>
             <ButtonTransparent
@@ -100,10 +118,10 @@ const ProjectDetails = () => {
               href={dataProject.siteUrl}
               style={{ marginBottom: "4rem" }}
             >
-              Visit website
+              Odwiedź
             </ButtonTransparent>
             <ProjectDetailsIntroText style={{ marginBottom: "4rem" }}>
-              Static previews
+              Podgląd
             </ProjectDetailsIntroText>
             <ImageEl
               src={dataProject.images.img5}

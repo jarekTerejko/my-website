@@ -116,7 +116,7 @@ const Projects = ({
                             );
                           })}
                         </DescriptionText>
-                        <LinkR to={`/project/${i + 1}`}>View Project</LinkR>
+                        <LinkR to={`/project/${i + 1}`}>Więcej</LinkR>
                       </ProjectsColRight>
                     </ProjectsCols>
                   );
@@ -170,7 +170,7 @@ const Projects = ({
                               );
                             })}
                           </DescriptionText>
-                          <LinkR to={`/project/${i + 1}`}>View Project</LinkR>
+                          <LinkR to={`/project/${i + 1}`}>Więcej</LinkR>
                         </ProjectsColRight>
                       </ProjectsCols>
                     );
