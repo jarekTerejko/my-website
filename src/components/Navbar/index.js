@@ -50,7 +50,7 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
                 to="/"
                 $scrolledNav={scrolledNav}
                 $isOpen={isOpen}
-                onClick={handleMenu}
+                onClick={closeMenu}
                 exact={true}
               >
                 Home
@@ -61,7 +61,7 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
                 $scrolledNav={scrolledNav}
                 to="/portfolio"
                 $isOpen={isOpen}
-                onClick={handleMenu}
+                onClick={closeMenu}
               >
                 Portfolio
               </NavbarNavLinkR>
@@ -71,7 +71,7 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
                 $scrolledNav={scrolledNav}
                 to="/contact"
                 $isOpen={isOpen}
-                onClick={handleMenu}
+                onClick={closeMenu}
               >
                 Kontakt
               </NavbarNavLinkR>
