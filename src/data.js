@@ -353,8 +353,8 @@ export const dataProjects = [
       "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Za routing odpowiada React Router.",
     descriptionLong:
       "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA składa sie z pięciu stron i jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Nawigacja pomiędzy stronami to zasługa React Router. Walidacja formularza po stronie klienta (bez użycia zewnętrzenj biblioteki) wraz z podpowiedziami dla użytkownika zapobiega przesłaniu niepełnych lub błędnyh danych.",
-    siteUrl: "https://clock-app-terejko.netlify.app",
-    gitHubUrl: "https://github.com/jarekTerejko/clock-api-ip-app",
+    siteUrl: "https://designo-multipage-terejko.netlify.app",
+    gitHubUrl: "https://github.com/jarekTerejko/designo-multipage",
     languages: ["JavaScript"],
     tools: ["react", "styled components", "API"],
   },
