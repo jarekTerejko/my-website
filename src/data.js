@@ -7,6 +7,7 @@ import MoviesList1 from "./images/portfolio/desktop/image-portfolio-movies.jpg";
 import PayApi1 from "./images/portfolio/desktop/image-portfolio-payapi.jpg";
 import Todo1 from "./images/portfolio/desktop/image-portfolio-todo.jpg";
 import Clock1 from "./images/portfolio/desktop/image-portfolio-clock.jpg";
+import Designo1 from "./images/portfolio/desktop/image-portfolio-designo.jpg";
 import Manage2 from "./images/portfolio/tablet/image-portfolio-manage.jpg";
 import Bookmark2 from "./images/portfolio/tablet/image-portfolio-bookmark.jpg";
 import Fylo2 from "./images/portfolio/tablet/image-portfolio-fylo.jpg";
@@ -16,6 +17,7 @@ import MoviesList2 from "./images/portfolio/tablet/image-portfolio-movies.jpg";
 import PayApi2 from "./images/portfolio/tablet/image-portfolio-payapi.jpg";
 import Todo2 from "./images/portfolio/tablet/image-portfolio-todo.jpg";
 import Clock2 from "./images/portfolio/tablet/image-portfolio-clock.jpg";
+import Designo2 from "./images/portfolio/tablet/image-portfolio-designo.jpg";
 import Manage3 from "./images/portfolio/mobile/image-portfolio-manage.jpg";
 import Bookmark3 from "./images/portfolio/mobile/image-portfolio-bookmark.jpg";
 import Fylo3 from "./images/portfolio/mobile/image-portfolio-fylo.jpg";
@@ -25,15 +27,35 @@ import MoviesList3 from "./images/portfolio/mobile/image-portfolio-movies.jpg";
 import PayApi3 from "./images/portfolio/mobile/image-portfolio-payapi.jpg";
 import Todo3 from "./images/portfolio/mobile/image-portfolio-todo.jpg";
 import Clock3 from "./images/portfolio/mobile/image-portfolio-clock.jpg";
+import Designo3 from "./images/portfolio/mobile/image-portfolio-designo.jpg";
 import Manage4 from "./images/project/desktop/image-manage-hero.jpg";
+import Manage7 from "./images/project/tablet/image-manage-hero.jpg";
+import Manage8 from "./images/project/mobile/image-manage-hero.jpg";
 import Bookmark4 from "./images/project/desktop/image-bookmark-hero.jpg";
+import Bookmark7 from "./images/project/tablet/image-bookmark-hero.jpg";
+import Bookmark8 from "./images/project/mobile/image-bookmark-hero.jpg";
 import Fylo4 from "./images/project/desktop/image-fylo-hero.jpg";
+import Fylo7 from "./images/project/tablet/image-fylo-hero.jpg";
+import Fylo8 from "./images/project/mobile/image-fylo-hero.jpg";
 import Insure4 from "./images/project/desktop/image-insure-hero.jpg";
 import Photosnap4 from "./images/project/desktop/image-photosnap-hero.jpg";
+import Photosnap7 from "./images/project/tablet/image-photosnap-hero.jpg";
+import Photosnap8 from "./images/project/mobile/image-photosnap-hero.jpg";
 import MoviesList4 from "./images/project/desktop/image-movies-hero.jpg";
+import MoviesList7 from "./images/project/tablet/image-movies-hero.jpg";
+import MoviesList8 from "./images/project/mobile/image-movies-hero.jpg";
 import PayApi4 from "./images/project/desktop/image-payapi-hero.jpg";
+import PayApi7 from "./images/project/tablet/image-payapi-hero.jpg";
+import PayApi8 from "./images/project/mobile/image-payapi-hero.jpg";
 import Todo4 from "./images/project/desktop/image-todo-hero.jpg";
+import Todo7 from "./images/project/tablet/image-todo-hero.jpg";
+import Todo8 from "./images/project/mobile/image-todo-hero.jpg";
 import Clock4 from "./images/project/desktop/image-clock-hero.jpg";
+import Clock7 from "./images/project/tablet/image-clock-hero.jpg";
+import Clock8 from "./images/project/mobile/image-clock-hero.jpg";
+import Designo4 from "./images/project/desktop/image-designo-hero.jpg";
+import Designo7 from "./images/project/tablet/image-designo-hero.jpg";
+import Designo8 from "./images/project/mobile/image-designo-hero.jpg";
 import Manage5 from "./images/project/desktop/image-manage-preview-1.jpg";
 import Bookmark5 from "./images/project/desktop/image-bookmark-preview-1.jpg";
 import Fylo5 from "./images/project/desktop/image-fylo-preview-1.jpg";
@@ -43,6 +65,7 @@ import MoviesList5 from "./images/project/desktop/image-movies-preview-1.jpg";
 import PayApi5 from "./images/project/desktop/image-payapi-preview-1.jpg";
 import Todo5 from "./images/project/desktop/image-todo-preview-1.jpg";
 import Clock5 from "./images/project/desktop/image-clock-preview-1.jpg";
+import Designo5 from "./images/project/desktop/image-designo-preview-1.jpg";
 import Manage6 from "./images/project/desktop/image-manage-preview-2.jpg";
 import Bookmark6 from "./images/project/desktop/image-bookmark-preview-2.jpg";
 import Fylo6 from "./images/project/desktop/image-fylo-preview-2.jpg";
@@ -52,6 +75,7 @@ import MoviesList6 from "./images/project/desktop/image-movies-preview-2.jpg";
 import PayApi6 from "./images/project/desktop/image-payapi-preview-2.jpg";
 import Todo6 from "./images/project/desktop/image-todo-preview-2.jpg";
 import Clock6 from "./images/project/desktop/image-clock-preview-2.jpg";
+import Designo6 from "./images/project/desktop/image-designo-preview-2.jpg";
 
 export const dataProjects = [
   {
@@ -63,6 +87,8 @@ export const dataProjects = [
       img4: Manage4,
       img5: Manage5,
       img6: Manage6,
+      img7: Manage7,
+      img8: Manage8,
     },
     title: "Manage",
     goals: ["responsywność", "walidacja formularza", "mobilne menu", "Slider"],
@@ -84,6 +110,8 @@ export const dataProjects = [
       img4: Bookmark4,
       img5: Bookmark5,
       img6: Bookmark6,
+      img7: Bookmark7,
+      img8: Bookmark8,
     },
     title: "Bookmark",
     goals: [
@@ -131,6 +159,8 @@ export const dataProjects = [
       img4: Fylo4,
       img5: Fylo5,
       img6: Fylo6,
+      img7: Fylo7,
+      img8: Fylo8,
     },
     title: "Fylo",
     goals: [
@@ -157,6 +187,8 @@ export const dataProjects = [
       img4: Photosnap4,
       img5: Photosnap5,
       img6: Photosnap6,
+      img7: Photosnap7,
+      img8: Photosnap8,
     },
     title: "Photosnap",
     goals: [
@@ -184,6 +216,8 @@ export const dataProjects = [
       img4: MoviesList4,
       img5: MoviesList5,
       img6: MoviesList6,
+      img7: MoviesList7,
+      img8: MoviesList8,
     },
     title: "Movie Lists",
     goals: [
@@ -213,6 +247,8 @@ export const dataProjects = [
       img4: PayApi4,
       img5: PayApi5,
       img6: PayApi6,
+      img7: PayApi7,
+      img8: PayApi8,
     },
     title: "PayApi",
     goals: [
@@ -240,6 +276,8 @@ export const dataProjects = [
       img4: Todo4,
       img5: Todo5,
       img6: Todo6,
+      img7: Todo7,
+      img8: Todo8,
     },
     title: "Todo",
     goals: [
@@ -268,6 +306,8 @@ export const dataProjects = [
       img4: Clock4,
       img5: Clock5,
       img6: Clock6,
+      img7: Clock7,
+      img8: Clock8,
     },
     title: "Clock",
     goals: [
@@ -282,6 +322,37 @@ export const dataProjects = [
       "Projekt wymagał ode mnie zbudowania aplikacji Clock. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Aplikacja komunikuje się z dwoma API.",
     descriptionLong:
       "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna. Głównym zadaniem aplikacji jest wyświetlenie aktualnego czasu oraz przybliżonej lokalizacji użytkownika w oparciu o jego publiczne ip. Dodatkowe informacje o aktulnej dacie i strefie czasowej dostępne są o podatkowej interakcji. W górnej części aplikacji pojawia się losowo wyświetlany cytat (możliwa jest zmiana na kolejne). W zależności od pory dnia aplikacja wyświetla odpowiedni komunikat powitalny oraz zmienia zdjęcie w tle.",
+    siteUrl: "https://clock-app-terejko.netlify.app",
+    gitHubUrl: "https://github.com/jarekTerejko/clock-api-ip-app",
+    languages: ["JavaScript"],
+    tools: ["react", "styled components", "API"],
+  },
+  {
+    id: 10,
+    images: {
+      img1: Designo1,
+      img2: Designo2,
+      img3: Designo3,
+      img4: Designo4,
+      img5: Designo5,
+      img6: Designo6,
+      img7: Designo7,
+      img8: Designo8,
+    },
+    title: "Designo",
+    goals: [
+      "SPA",
+      "responsywność",
+      "animowany loader",
+      "Styled Components",
+      "walidacja formularza",
+      "multi-page",
+      "mobilne menu",
+    ],
+    descriptionShort:
+      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Za routing odpowiada React Router.",
+    descriptionLong:
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA składa sie z pięciu stron i jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Nawigacja pomiędzy stronami to zasługa React Router. Walidacja formularza po stronie klienta (bez użycia zewnętrzenj biblioteki) wraz z podpowiedziami dla użytkownika zapobiega przesłaniu niepełnych lub błędnyh danych.",
     siteUrl: "https://clock-app-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/clock-api-ip-app",
     languages: ["JavaScript"],

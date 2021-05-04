@@ -45,7 +45,6 @@ export const ProjectsColLeft = styled.div`
     props.projectsBgImgD ? `url(${props.projectsBgImgD})` : "black"};
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   background-size: contain;
   padding-top: calc(
     500 / 540 * 100%
@@ -54,6 +53,39 @@ export const ProjectsColLeft = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    background: ${(props) =>
+      props.projectsBgImgT ? `url(${props.projectsBgImgT})` : "black"};
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: calc(
+      314 / 339 * 100%
+    ); // (img-height / img-width * container-width)
+  }
+
+  @media screen and (max-width: 600px) {
+    background: ${(props) =>
+      props.projectsBgImgD ? `url(${props.projectsBgImgD})` : "black"};
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: calc(
+      500 / 540 * 100%
+    ); // (img-height / img-width * container-width)
+  }
+
+  @media screen and (max-width: 390px) {
+    background: ${(props) =>
+      props.projectsBgImgM ? `url(${props.projectsBgImgM})` : "black"};
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: calc(
+      288 / 311 * 100%
+    ); // (img-height / img-width * container-width)
+  }
 `;
 
 export const ProjectsColRight = styled.div`

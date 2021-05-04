@@ -55,7 +55,11 @@ const ProjectDetails = () => {
   ) : (
     <ProjectDetailsWrapper>
       <WrapperEl>
-        <ProjectDetailsIntroBgImg img4={dataProject.images.img4} />
+        <ProjectDetailsIntroBgImg
+          img4={dataProject.images.img4}
+          img7={dataProject.images.img7}
+          img8={dataProject.images.img8}
+        />
         <ProjectDetailsCols>
           <ProjectDetailsColLeft>
             <ProjectDetailsColLeftInner>

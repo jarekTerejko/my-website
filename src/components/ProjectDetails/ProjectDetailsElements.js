@@ -11,12 +11,27 @@ export const ProjectDetailsIntroBgImg = styled.div`
   ); // (img-height / img-width * container-width)
   background: ${(props) => (props.img4 ? `url(${props.img4})` : "black")};
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
   margin-bottom: 11.5rem;
 
   @media screen and (max-width: 768px) {
+    padding-top: calc(
+      310 / 689 * 100%
+    ); // (img-height / img-width * container-width)
+    background: ${(props) => (props.img7 ? `url(${props.img7})` : "black")};
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 5rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding-top: calc(
+      140 / 311 * 100%
+    ); // (img-height / img-width * container-width)
+    background: ${(props) => (props.img8 ? `url(${props.img8})` : "black")};
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 `;
 
