@@ -20,7 +20,7 @@ const ContactIntro = ({ contactData }) => {
       <WrapperEl>
         <ContactIntroCols>
           <ContactIntroColLeft>
-            <HeroHeading as="h2">Get in Touch</HeroHeading>
+            <HeroHeading as="h2">Poznajmy się</HeroHeading>
           </ContactIntroColLeft>
           <ContactIntroColRight>
             <DescriptionText>{contactData.getInTouchText}</DescriptionText>
