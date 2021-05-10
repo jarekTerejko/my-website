@@ -8,6 +8,7 @@ import PayApi1 from "./images/portfolio/desktop/image-portfolio-payapi.jpg";
 import Todo1 from "./images/portfolio/desktop/image-portfolio-todo.jpg";
 import Clock1 from "./images/portfolio/desktop/image-portfolio-clock.jpg";
 import Designo1 from "./images/portfolio/desktop/image-portfolio-designo.jpg";
+import Countries1 from "./images/portfolio/desktop/image-portfolio-countries.jpg";
 import Manage2 from "./images/portfolio/tablet/image-portfolio-manage.jpg";
 import Bookmark2 from "./images/portfolio/tablet/image-portfolio-bookmark.jpg";
 import Fylo2 from "./images/portfolio/tablet/image-portfolio-fylo.jpg";
@@ -18,6 +19,7 @@ import PayApi2 from "./images/portfolio/tablet/image-portfolio-payapi.jpg";
 import Todo2 from "./images/portfolio/tablet/image-portfolio-todo.jpg";
 import Clock2 from "./images/portfolio/tablet/image-portfolio-clock.jpg";
 import Designo2 from "./images/portfolio/tablet/image-portfolio-designo.jpg";
+import Countries2 from "./images/portfolio/tablet/image-portfolio-countries.jpg";
 import Manage3 from "./images/portfolio/mobile/image-portfolio-manage.jpg";
 import Bookmark3 from "./images/portfolio/mobile/image-portfolio-bookmark.jpg";
 import Fylo3 from "./images/portfolio/mobile/image-portfolio-fylo.jpg";
@@ -28,6 +30,7 @@ import PayApi3 from "./images/portfolio/mobile/image-portfolio-payapi.jpg";
 import Todo3 from "./images/portfolio/mobile/image-portfolio-todo.jpg";
 import Clock3 from "./images/portfolio/mobile/image-portfolio-clock.jpg";
 import Designo3 from "./images/portfolio/mobile/image-portfolio-designo.jpg";
+import Countries3 from "./images/portfolio/mobile/image-portfolio-countries.jpg";
 import Manage4 from "./images/project/desktop/image-manage-hero.jpg";
 import Manage7 from "./images/project/tablet/image-manage-hero.jpg";
 import Manage8 from "./images/project/mobile/image-manage-hero.jpg";
@@ -56,6 +59,9 @@ import Clock8 from "./images/project/mobile/image-clock-hero.jpg";
 import Designo4 from "./images/project/desktop/image-designo-hero.jpg";
 import Designo7 from "./images/project/tablet/image-designo-hero.jpg";
 import Designo8 from "./images/project/mobile/image-designo-hero.jpg";
+import Countries4 from "./images/project/desktop/image-countries-hero.jpg";
+import Countries7 from "./images/project/tablet/image-countries-hero.jpg";
+import Countries8 from "./images//project/mobile/image-countries-hero.jpg";
 import Manage5 from "./images/project/desktop/image-manage-preview-1.jpg";
 import Bookmark5 from "./images/project/desktop/image-bookmark-preview-1.jpg";
 import Fylo5 from "./images/project/desktop/image-fylo-preview-1.jpg";
@@ -66,6 +72,7 @@ import PayApi5 from "./images/project/desktop/image-payapi-preview-1.jpg";
 import Todo5 from "./images/project/desktop/image-todo-preview-1.jpg";
 import Clock5 from "./images/project/desktop/image-clock-preview-1.jpg";
 import Designo5 from "./images/project/desktop/image-designo-preview-1.jpg";
+import Countries5 from "./images/project/desktop/image-countries-preview-1.jpg";
 import Manage6 from "./images/project/desktop/image-manage-preview-2.jpg";
 import Bookmark6 from "./images/project/desktop/image-bookmark-preview-2.jpg";
 import Fylo6 from "./images/project/desktop/image-fylo-preview-2.jpg";
@@ -76,6 +83,7 @@ import PayApi6 from "./images/project/desktop/image-payapi-preview-2.jpg";
 import Todo6 from "./images/project/desktop/image-todo-preview-2.jpg";
 import Clock6 from "./images/project/desktop/image-clock-preview-2.jpg";
 import Designo6 from "./images/project/desktop/image-designo-preview-2.jpg";
+import Countries6 from "./images/project/desktop/image-countries-preview-2.jpg";
 
 export const dataProjects = [
   {
@@ -357,5 +365,34 @@ export const dataProjects = [
     gitHubUrl: "https://github.com/jarekTerejko/designo-multipage",
     languages: ["JavaScript"],
     tools: ["react", "styled components", "API"],
+  },
+  {
+    id: 10,
+    images: {
+      img1: Countries1,
+      img2: Countries2,
+      img3: Countries3,
+      img4: Countries4,
+      img5: Countries5,
+      img6: Countries6,
+      img7: Countries7,
+      img8: Countries8,
+    },
+    title: "Countries",
+    goals: [
+      "SPA",
+      "responsywność",
+      "animowany loader",
+      "komunikacja z API",
+      "dark mode / light mode",
+    ],
+    descriptionShort:
+      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Za routing odpowiada React Router.",
+    descriptionLong:
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA składa sie z dwóch stron i jest w pełni responsywna. Nawigacja pomiędzy stronami to zasługa React Router. Aplikacja komunikuje się z REST Countries API. Aplikacja pozwala użytkownikowi na zmianę pomiędzy Dark Mode i Light Mode.",
+    siteUrl: "https://api-countries-react-terejko.netlify.app",
+    gitHubUrl: "https://github.com/jarekTerejko/rest-countries-react",
+    languages: ["JavaScript"],
+    tools: ["react", "API", "sass"],
   },
 ];

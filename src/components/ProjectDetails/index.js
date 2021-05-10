@@ -129,11 +129,17 @@ const ProjectDetails = () => {
             </ProjectDetailsIntroText>
             <ImageEl
               src={dataProject.images.img5}
-              style={{ marginBottom: "3rem" }}
+              style={{
+                marginBottom: "3rem",
+                boxShadow: "1px 1px 10px rgba(0, 0, 0, .2)",
+              }}
             />
             <ImageEl
               src={dataProject.images.img6}
-              style={{ marginBottom: "6.5rem" }}
+              style={{
+                marginBottom: "6.5rem",
+                boxShadow: "1px 1px 10px rgba(0, 0, 0, .2)",
+              }}
             />
           </ProjectDetailsColRight>
         </ProjectDetailsCols>
