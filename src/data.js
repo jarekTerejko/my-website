@@ -383,13 +383,15 @@ export const dataProjects = [
       "SPA",
       "responsywność",
       "animowany loader",
+      "dynamiczne filtrowanie",
+      "dynamiczne wyszukiwanie",
       "komunikacja z API",
       "dark mode / light mode",
     ],
     descriptionShort:
       "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Za routing odpowiada React Router.",
     descriptionLong:
-      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA składa sie z dwóch stron i jest w pełni responsywna. Nawigacja pomiędzy stronami to zasługa React Router. Aplikacja komunikuje się z REST Countries API. Aplikacja pozwala użytkownikowi na zmianę pomiędzy Dark Mode i Light Mode.",
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA jest w pełni responsywna, składa się ze strony domowej, oraz wielu dynamicznie tworzonych podstron. Za routing odpowiada React Router. Aplikacja komunikuje się z REST Countries API. Użytkownik jest w stanie zmienić tryb wyświetlania z Light Mode (domyślny) na Dark Mode i odwrotnie.",
     siteUrl: "https://api-countries-react-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/rest-countries-react",
     languages: ["JavaScript"],
