@@ -14,6 +14,7 @@ export const ProjectDetailsIntroBgImg = styled.div`
   /* background-position: center; */
   background-size: cover;
   margin-bottom: 11.5rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
 
   @media screen and (max-width: 768px) {
     padding-top: calc(
