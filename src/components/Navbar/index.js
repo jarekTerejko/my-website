@@ -53,7 +53,7 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
                 onClick={closeMenu}
                 exact={true}
               >
-                Home
+                Start
               </NavbarNavLinkR>
             </NavbarNavItem>
             <NavbarNavItem>

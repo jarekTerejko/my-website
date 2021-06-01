@@ -27,7 +27,7 @@ const Footer = () => {
           <FooterNavItems siteNav>
             <NavbarNavItem>
               <NavbarNavLinkR to="/" exact={true} $footerLink>
-                Home
+                Start
               </NavbarNavLinkR>
             </NavbarNavItem>
             <NavbarNavItem>
