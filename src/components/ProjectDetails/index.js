@@ -157,9 +157,7 @@ const ProjectDetails = () => {
                     ? `${dataProjects[dataProjects.length - 1].title}`
                     : `${dataProjects[index - 1].title}`}
                 </ProjectDetailsName>
-                <ProjectDetailsLinkText>
-                  Previous project
-                </ProjectDetailsLinkText>
+                <ProjectDetailsLinkText>Poprzedni</ProjectDetailsLinkText>
               </div>
             </ProjectDetailsLink>
           </ProjectDetailsLinkLeftWrapper>
@@ -175,7 +173,7 @@ const ProjectDetails = () => {
                     ? `${dataProjects[0].title}`
                     : `${dataProjects[index + 1].title}`}
                 </ProjectDetailsName>
-                <ProjectDetailsLinkText>Next project</ProjectDetailsLinkText>
+                <ProjectDetailsLinkText>Następny</ProjectDetailsLinkText>
               </div>
               <ImageEl style={{ marginLeft: "1rem" }} src={ChevronRight} />
             </ProjectDetailsLink>
