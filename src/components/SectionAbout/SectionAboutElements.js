@@ -7,43 +7,20 @@ export const AboutWrapper = styled.section`
 
 export const AboutCols = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 
-  @media screen and (max-width: 900px) {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
 `;
 export const AboutColLeft = styled.div`
-  min-height: 60rem;
-  background: ${(props) =>
-    props.personPhoto ? `url(${props.personPhoto})` : "black"};
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  @media screen and (max-width: 900px) {
-    grid-column: 1/3;
-    background: ${(props) =>
-      props.personPlaceholderT ? `url(${props.personPlaceholderT})` : "black"};
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     grid-column: 1/2;
-  }
-  @media screen and (max-width: 375px) {
-    background: ${(props) =>
-      props.personPlaceholderM ? `url(${props.personPlaceholderM})` : "black"};
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 `;
 
@@ -52,22 +29,19 @@ export const AboutColRight = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 5rem 9rem;
+  padding: 5rem 4rem;
   position: relative;
+  grid-column: 2/4;
 
   @media screen and (max-width: 1000px) {
     padding: 5rem 3rem;
   }
 
-  @media screen and (max-width: 900px) {
-    grid-column: 3/6;
-    padding: 3rem;
-  }
   @media screen and (max-width: 700px) {
     padding: 3rem 1rem;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     grid-column: 1/2;
     padding: 5rem 0rem;
   }
@@ -77,9 +51,9 @@ export const AboutColRight = styled.div`
     content: "";
     position: absolute;
     top: 0;
-    left: 90px;
+    left: 40px;
     height: 2px;
-    width: calc(100% - 180px);
+    width: calc(100% - 80px);
     background: var(--color-border-gray);
 
     @media screen and (max-width: 1000px) {
@@ -87,14 +61,11 @@ export const AboutColRight = styled.div`
       width: calc(100% - 60px);
     }
 
-    @media screen and (max-width: 700px) {
-      left: 10px;
-      width: calc(100% - 20px);
-    }
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 768px) {
       left: 0;
       width: 100%;
     }
+
   }
 
   &::after {
