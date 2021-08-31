@@ -9,6 +9,7 @@ import Todo1 from "./images/portfolio/desktop/image-portfolio-todo.jpg";
 import Clock1 from "./images/portfolio/desktop/image-portfolio-clock.jpg";
 import Designo1 from "./images/portfolio/desktop/image-portfolio-designo.jpg";
 import Countries1 from "./images/portfolio/desktop/image-portfolio-countries.jpg";
+import Coffeeroasters1 from "./images/portfolio/desktop/image-portfolio-coffeeroasters.jpg";
 import Manage2 from "./images/portfolio/tablet/image-portfolio-manage.jpg";
 import Bookmark2 from "./images/portfolio/tablet/image-portfolio-bookmark.jpg";
 import Fylo2 from "./images/portfolio/tablet/image-portfolio-fylo.jpg";
@@ -20,6 +21,7 @@ import Todo2 from "./images/portfolio/tablet/image-portfolio-todo.jpg";
 import Clock2 from "./images/portfolio/tablet/image-portfolio-clock.jpg";
 import Designo2 from "./images/portfolio/tablet/image-portfolio-designo.jpg";
 import Countries2 from "./images/portfolio/tablet/image-portfolio-countries.jpg";
+import Coffeeroasters2 from "./images/portfolio/tablet/image-portfolio-coffeeroasters.jpg";
 import Manage3 from "./images/portfolio/mobile/image-portfolio-manage.jpg";
 import Bookmark3 from "./images/portfolio/mobile/image-portfolio-bookmark.jpg";
 import Fylo3 from "./images/portfolio/mobile/image-portfolio-fylo.jpg";
@@ -31,6 +33,7 @@ import Todo3 from "./images/portfolio/mobile/image-portfolio-todo.jpg";
 import Clock3 from "./images/portfolio/mobile/image-portfolio-clock.jpg";
 import Designo3 from "./images/portfolio/mobile/image-portfolio-designo.jpg";
 import Countries3 from "./images/portfolio/mobile/image-portfolio-countries.jpg";
+import Coffeeroasters3 from "./images/portfolio/mobile/image-portfolio-coffeeroasters.jpg";
 import Manage4 from "./images/project/desktop/image-manage-hero.jpg";
 import Manage7 from "./images/project/tablet/image-manage-hero.jpg";
 import Manage8 from "./images/project/mobile/image-manage-hero.jpg";
@@ -62,6 +65,9 @@ import Designo8 from "./images/project/mobile/image-designo-hero.jpg";
 import Countries4 from "./images/project/desktop/image-countries-hero.jpg";
 import Countries7 from "./images/project/tablet/image-countries-hero.jpg";
 import Countries8 from "./images//project/mobile/image-countries-hero.jpg";
+import Coffeeroasters4 from "./images/project/desktop/image-coffeeroasters-hero.jpg";
+import Coffeeroasters7 from "./images/project/tablet/image-coffeeroasters-hero.jpg";
+import Coffeeroasters8 from "./images/project/mobile/image-coffeeroasters-hero.jpg";
 import Manage5 from "./images/project/desktop/image-manage-preview-1.jpg";
 import Bookmark5 from "./images/project/desktop/image-bookmark-preview-1.jpg";
 import Fylo5 from "./images/project/desktop/image-fylo-preview-1.jpg";
@@ -73,6 +79,7 @@ import Todo5 from "./images/project/desktop/image-todo-preview-1.jpg";
 import Clock5 from "./images/project/desktop/image-clock-preview-1.jpg";
 import Designo5 from "./images/project/desktop/image-designo-preview-1.jpg";
 import Countries5 from "./images/project/desktop/image-countries-preview-1.jpg";
+import Coffeeroasters5 from "./images/project/desktop/image-coffeeroasters-preview-1.jpg";
 import Manage6 from "./images/project/desktop/image-manage-preview-2.jpg";
 import Bookmark6 from "./images/project/desktop/image-bookmark-preview-2.jpg";
 import Fylo6 from "./images/project/desktop/image-fylo-preview-2.jpg";
@@ -84,6 +91,7 @@ import Todo6 from "./images/project/desktop/image-todo-preview-2.jpg";
 import Clock6 from "./images/project/desktop/image-clock-preview-2.jpg";
 import Designo6 from "./images/project/desktop/image-designo-preview-2.jpg";
 import Countries6 from "./images/project/desktop/image-countries-preview-2.jpg";
+import Coffeeroasters6 from "./images/project/desktop/image-coffeeroasters-preview-2.jpg";
 
 export const dataProjects = [
   {
@@ -396,5 +404,37 @@ export const dataProjects = [
     gitHubUrl: "https://github.com/jarekTerejko/rest-countries-react",
     languages: ["JavaScript"],
     tools: ["react", "API", "sass"],
+  },
+  {
+    id: 11,
+    images: {
+      img1: Coffeeroasters1,
+      img2: Coffeeroasters2,
+      img3: Coffeeroasters3,
+      img4: Coffeeroasters4,
+      img5: Coffeeroasters5,
+      img6: Coffeeroasters6,
+      img7: Coffeeroasters7,
+      img8: Coffeeroasters8,
+    },
+    title: "Coffeeroasters",
+    goals: [
+      "SPA",
+      "responsywność",
+      "Styled Components",
+      "multi-page",
+      "mobilne menu",
+      "sticky nav",
+      "accordion",
+      "modal",
+    ],
+    descriptionShort:
+      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Za routing odpowiada React Router.",
+    descriptionLong:
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA jest w pełni responsywna, składa się ze strony domowej, oraz dwóch podstron.  Nawigacja pomiędzy stronami to zasługa React Router. Aplikacja umożliwia złożenie zamówienia na kawę, która najlepiej odpowiada preferencjom zamawiającego.",
+    siteUrl: "https://coffeeroasters-terejko.netlify.app",
+    gitHubUrl: "https://github.com/jarekTerejko/coffeeroasters-site",
+    languages: ["JavaScript"],
+    tools: ["react", "styled components"],
   },
 ];
