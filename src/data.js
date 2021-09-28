@@ -10,6 +10,7 @@ import Clock1 from "./images/portfolio/desktop/image-portfolio-clock.jpg";
 import Designo1 from "./images/portfolio/desktop/image-portfolio-designo.jpg";
 import Countries1 from "./images/portfolio/desktop/image-portfolio-countries.jpg";
 import Coffeeroasters1 from "./images/portfolio/desktop/image-portfolio-coffeeroasters.jpg";
+import Tip1 from "./images/portfolio/desktop/image-portfolio-tip.jpg";
 import Manage2 from "./images/portfolio/tablet/image-portfolio-manage.jpg";
 import Bookmark2 from "./images/portfolio/tablet/image-portfolio-bookmark.jpg";
 import Fylo2 from "./images/portfolio/tablet/image-portfolio-fylo.jpg";
@@ -22,6 +23,7 @@ import Clock2 from "./images/portfolio/tablet/image-portfolio-clock.jpg";
 import Designo2 from "./images/portfolio/tablet/image-portfolio-designo.jpg";
 import Countries2 from "./images/portfolio/tablet/image-portfolio-countries.jpg";
 import Coffeeroasters2 from "./images/portfolio/tablet/image-portfolio-coffeeroasters.jpg";
+import Tip2 from "./images/portfolio/tablet/image-portfolio-tip.jpg";
 import Manage3 from "./images/portfolio/mobile/image-portfolio-manage.jpg";
 import Bookmark3 from "./images/portfolio/mobile/image-portfolio-bookmark.jpg";
 import Fylo3 from "./images/portfolio/mobile/image-portfolio-fylo.jpg";
@@ -34,6 +36,7 @@ import Clock3 from "./images/portfolio/mobile/image-portfolio-clock.jpg";
 import Designo3 from "./images/portfolio/mobile/image-portfolio-designo.jpg";
 import Countries3 from "./images/portfolio/mobile/image-portfolio-countries.jpg";
 import Coffeeroasters3 from "./images/portfolio/mobile/image-portfolio-coffeeroasters.jpg";
+import Tip3 from "./images/portfolio/mobile/image-portfolio-tip.jpg";
 import Manage4 from "./images/project/desktop/image-manage-hero.jpg";
 import Manage7 from "./images/project/tablet/image-manage-hero.jpg";
 import Manage8 from "./images/project/mobile/image-manage-hero.jpg";
@@ -68,6 +71,9 @@ import Countries8 from "./images//project/mobile/image-countries-hero.jpg";
 import Coffeeroasters4 from "./images/project/desktop/image-coffeeroasters-hero.jpg";
 import Coffeeroasters7 from "./images/project/tablet/image-coffeeroasters-hero.jpg";
 import Coffeeroasters8 from "./images/project/mobile/image-coffeeroasters-hero.jpg";
+import Tip4 from "./images/project/desktop/image-tip-hero.jpg";
+import Tip7 from "./images/project/tablet/image-tip-hero.jpg";
+import Tip8 from "./images/project/mobile/image-tip-hero.jpg";
 import Manage5 from "./images/project/desktop/image-manage-preview-1.jpg";
 import Bookmark5 from "./images/project/desktop/image-bookmark-preview-1.jpg";
 import Fylo5 from "./images/project/desktop/image-fylo-preview-1.jpg";
@@ -80,6 +86,7 @@ import Clock5 from "./images/project/desktop/image-clock-preview-1.jpg";
 import Designo5 from "./images/project/desktop/image-designo-preview-1.jpg";
 import Countries5 from "./images/project/desktop/image-countries-preview-1.jpg";
 import Coffeeroasters5 from "./images/project/desktop/image-coffeeroasters-preview-1.jpg";
+import Tip5 from "./images/project/desktop/image-tip-preview-1.jpg";
 import Manage6 from "./images/project/desktop/image-manage-preview-2.jpg";
 import Bookmark6 from "./images/project/desktop/image-bookmark-preview-2.jpg";
 import Fylo6 from "./images/project/desktop/image-fylo-preview-2.jpg";
@@ -92,6 +99,7 @@ import Clock6 from "./images/project/desktop/image-clock-preview-2.jpg";
 import Designo6 from "./images/project/desktop/image-designo-preview-2.jpg";
 import Countries6 from "./images/project/desktop/image-countries-preview-2.jpg";
 import Coffeeroasters6 from "./images/project/desktop/image-coffeeroasters-preview-2.jpg";
+import Tip6 from "./images/project/desktop/image-tip-preview-2.jpg";
 
 export const dataProjects = [
   {
@@ -434,6 +442,35 @@ export const dataProjects = [
       "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA jest w pełni responsywna, składa się ze strony domowej, oraz dwóch podstron.  Nawigacja pomiędzy stronami to zasługa React Router. Aplikacja umożliwia złożenie zamówienia na kawę, która najlepiej odpowiada preferencjom zamawiającego.",
     siteUrl: "https://coffeeroasters-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/coffeeroasters-site",
+    languages: ["JavaScript"],
+    tools: ["react", "styled components"],
+  },
+  {
+    id: 12,
+    images: {
+      img1: Tip1,
+      img2: Tip2,
+      img3: Tip3,
+      img4: Tip4,
+      img5: Tip5,
+      img6: Tip6,
+      img7: Tip7,
+      img8: Tip8,
+    },
+    title: "Tip Calculator",
+    goals: [
+      "responsywność",
+      "Styled Components",
+      "walidacja formularza",
+      "zarządznie stanem aplikacji",
+    ],
+    descriptionShort:
+      "Projekt wymagał ode mnie zbudowania aplikacji wyliczającej wartość napiwku należnego za wykonaną usługę. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna.",
+    descriptionLong:
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna. Aplikacja umożliwia wyliczenie wartości napiwku. Do wyboru jest kilka propozycji procentowych, a także możliwość wpisania wartości według własnego uznania. Wyświetlany jest ponadto koszt jednotkowy dla osoby (szczególnie przydatne podczas zrzutki na rachunek).",
+    siteUrl: "https://tip-calculator-terejko.netlify.app",
+    gitHubUrl:
+      "https://github.com/jarekTerejko/fem-challenges-solutions/tree/main/tip-calculator-app-main",
     languages: ["JavaScript"],
     tools: ["react", "styled components"],
   },

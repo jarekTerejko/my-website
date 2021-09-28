@@ -84,7 +84,7 @@ export const ProjectsColLeft = styled.div`
     background-size: contain;
     padding-top: calc(
       288 / 311 * 100%
-    ); // (img-height / img-width * container-width)
+    ); // (img-height / img-width * lacontainer-width)
   }
 `;
 
