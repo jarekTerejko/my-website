@@ -11,6 +11,7 @@ import Designo1 from "./images/portfolio/desktop/image-portfolio-designo.jpg";
 import Countries1 from "./images/portfolio/desktop/image-portfolio-countries.jpg";
 import Coffeeroasters1 from "./images/portfolio/desktop/image-portfolio-coffeeroasters.jpg";
 import Tip1 from "./images/portfolio/desktop/image-portfolio-tip.jpg";
+import Planets1 from "./images/portfolio/desktop/image-portfolio-planets.jpg";
 import Manage2 from "./images/portfolio/tablet/image-portfolio-manage.jpg";
 import Bookmark2 from "./images/portfolio/tablet/image-portfolio-bookmark.jpg";
 import Fylo2 from "./images/portfolio/tablet/image-portfolio-fylo.jpg";
@@ -24,6 +25,7 @@ import Designo2 from "./images/portfolio/tablet/image-portfolio-designo.jpg";
 import Countries2 from "./images/portfolio/tablet/image-portfolio-countries.jpg";
 import Coffeeroasters2 from "./images/portfolio/tablet/image-portfolio-coffeeroasters.jpg";
 import Tip2 from "./images/portfolio/tablet/image-portfolio-tip.jpg";
+import Planets2 from "./images/portfolio/tablet/image-portfolio-planets.jpg";
 import Manage3 from "./images/portfolio/mobile/image-portfolio-manage.jpg";
 import Bookmark3 from "./images/portfolio/mobile/image-portfolio-bookmark.jpg";
 import Fylo3 from "./images/portfolio/mobile/image-portfolio-fylo.jpg";
@@ -37,6 +39,7 @@ import Designo3 from "./images/portfolio/mobile/image-portfolio-designo.jpg";
 import Countries3 from "./images/portfolio/mobile/image-portfolio-countries.jpg";
 import Coffeeroasters3 from "./images/portfolio/mobile/image-portfolio-coffeeroasters.jpg";
 import Tip3 from "./images/portfolio/mobile/image-portfolio-tip.jpg";
+import Planets3 from "./images/portfolio/mobile/image-portfolio-planets.jpg";
 import Manage4 from "./images/project/desktop/image-manage-hero.jpg";
 import Manage7 from "./images/project/tablet/image-manage-hero.jpg";
 import Manage8 from "./images/project/mobile/image-manage-hero.jpg";
@@ -74,6 +77,9 @@ import Coffeeroasters8 from "./images/project/mobile/image-coffeeroasters-hero.j
 import Tip4 from "./images/project/desktop/image-tip-hero.jpg";
 import Tip7 from "./images/project/tablet/image-tip-hero.jpg";
 import Tip8 from "./images/project/mobile/image-tip-hero.jpg";
+import Planets4 from "./images/project/desktop/image-planets-hero.jpg";
+import Planets7 from "./images/project/tablet/image-planets-hero.jpg";
+import Planets8 from "./images/project/mobile/image-planets-hero.jpg";
 import Manage5 from "./images/project/desktop/image-manage-preview-1.jpg";
 import Bookmark5 from "./images/project/desktop/image-bookmark-preview-1.jpg";
 import Fylo5 from "./images/project/desktop/image-fylo-preview-1.jpg";
@@ -87,6 +93,7 @@ import Designo5 from "./images/project/desktop/image-designo-preview-1.jpg";
 import Countries5 from "./images/project/desktop/image-countries-preview-1.jpg";
 import Coffeeroasters5 from "./images/project/desktop/image-coffeeroasters-preview-1.jpg";
 import Tip5 from "./images/project/desktop/image-tip-preview-1.jpg";
+import Planets5 from "./images/project/desktop/image-planets-preview-1.jpg";
 import Manage6 from "./images/project/desktop/image-manage-preview-2.jpg";
 import Bookmark6 from "./images/project/desktop/image-bookmark-preview-2.jpg";
 import Fylo6 from "./images/project/desktop/image-fylo-preview-2.jpg";
@@ -100,6 +107,7 @@ import Designo6 from "./images/project/desktop/image-designo-preview-2.jpg";
 import Countries6 from "./images/project/desktop/image-countries-preview-2.jpg";
 import Coffeeroasters6 from "./images/project/desktop/image-coffeeroasters-preview-2.jpg";
 import Tip6 from "./images/project/desktop/image-tip-preview-2.jpg";
+import Planets6 from "./images/project/desktop/image-planets-preview-2.jpg";
 
 export const dataProjects = [
   {
@@ -321,36 +329,36 @@ export const dataProjects = [
     languages: ["JavaScript"],
     tools: ["react", "styled components"],
   },
-  {
-    id: 9,
-    images: {
-      img1: Clock1,
-      img2: Clock2,
-      img3: Clock3,
-      img4: Clock4,
-      img5: Clock5,
-      img6: Clock6,
-      img7: Clock7,
-      img8: Clock8,
-    },
-    title: "Clock",
-    goals: [
-      "responsywność",
-      "animowany loader",
-      "Styled Components",
-      "komunikacja z dwoma API",
-      "losowy wybór cytatu",
-      "dynamiczna zmiana treści",
-    ],
-    descriptionShort:
-      "Projekt wymagał ode mnie zbudowania aplikacji Clock. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Aplikacja komunikuje się z dwoma API.",
-    descriptionLong:
-      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna. Głównym zadaniem aplikacji jest wyświetlenie aktualnego czasu oraz przybliżonej lokalizacji użytkownika w oparciu o jego publiczne ip. Dodatkowe informacje o aktulnej dacie i strefie czasowej dostępne są o podatkowej interakcji. W górnej części aplikacji pojawia się losowo wyświetlany cytat (możliwa jest zmiana na kolejne). W zależności od pory dnia aplikacja wyświetla odpowiedni komunikat powitalny oraz zmienia zdjęcie w tle.",
-    siteUrl: "https://clock-app-terejko.netlify.app",
-    gitHubUrl: "https://github.com/jarekTerejko/clock-api-ip-app",
-    languages: ["JavaScript"],
-    tools: ["react", "styled components", "API"],
-  },
+  // {
+  //   id: 9,
+  //   images: {
+  //     img1: Clock1,
+  //     img2: Clock2,
+  //     img3: Clock3,
+  //     img4: Clock4,
+  //     img5: Clock5,
+  //     img6: Clock6,
+  //     img7: Clock7,
+  //     img8: Clock8,
+  //   },
+  //   title: "Clock",
+  //   goals: [
+  //     "responsywność",
+  //     "animowany loader",
+  //     "Styled Components",
+  //     "komunikacja z dwoma API",
+  //     "losowy wybór cytatu",
+  //     "dynamiczna zmiana treści",
+  //   ],
+  //   descriptionShort:
+  //     "Projekt wymagał ode mnie zbudowania aplikacji Clock. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Aplikacja komunikuje się z dwoma API.",
+  //   descriptionLong:
+  //     "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna. Głównym zadaniem aplikacji jest wyświetlenie aktualnego czasu oraz przybliżonej lokalizacji użytkownika w oparciu o jego publiczne ip. Dodatkowe informacje o aktulnej dacie i strefie czasowej dostępne są o podatkowej interakcji. W górnej części aplikacji pojawia się losowo wyświetlany cytat (możliwa jest zmiana na kolejne). W zależności od pory dnia aplikacja wyświetla odpowiedni komunikat powitalny oraz zmienia zdjęcie w tle.",
+  //   siteUrl: "https://clock-app-terejko.netlify.app",
+  //   gitHubUrl: "https://github.com/jarekTerejko/clock-api-ip-app",
+  //   languages: ["JavaScript"],
+  //   tools: ["react", "styled components", "API"],
+  // },
   {
     id: 10,
     images: {
@@ -383,7 +391,7 @@ export const dataProjects = [
     tools: ["react", "styled components", "API"],
   },
   {
-    id: 10,
+    id: 11,
     images: {
       img1: Countries1,
       img2: Countries2,
@@ -414,7 +422,7 @@ export const dataProjects = [
     tools: ["react", "API", "sass"],
   },
   {
-    id: 11,
+    id: 12,
     images: {
       img1: Coffeeroasters1,
       img2: Coffeeroasters2,
@@ -446,7 +454,7 @@ export const dataProjects = [
     tools: ["react", "styled components"],
   },
   {
-    id: 12,
+    id: 13,
     images: {
       img1: Tip1,
       img2: Tip2,
@@ -471,6 +479,38 @@ export const dataProjects = [
     siteUrl: "https://tip-calculator-terejko.netlify.app",
     gitHubUrl:
       "https://github.com/jarekTerejko/fem-challenges-solutions/tree/main/tip-calculator-app-main",
+    languages: ["JavaScript"],
+    tools: ["react", "styled components"],
+  },
+  {
+    id: 14,
+    images: {
+      img1: Planets1,
+      img2: Planets2,
+      img3: Planets3,
+      img4: Planets4,
+      img5: Planets5,
+      img6: Planets6,
+      img7: Planets7,
+      img8: Planets8,
+    },
+    title: "The Planets",
+    goals: [
+      "SPA",
+      "responsywność",
+      "Styled Components",
+      "multi-page",
+      "mobilne menu",
+      "zarządznie stanem aplikacji",
+      "animowany loader",
+      "React Router",
+    ],
+    descriptionShort:
+      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Za routing odpowiada React Router.",
+    descriptionLong:
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna, a jej głównym zadaniem jest wyświetlenie podstawowych informacji o planetach w układzie słonecznym. Dane zapisane są w lokalnym pliku data.json. Asynkroczny kod pobiera te dane, tworząc wrażenie łączenia się z zewnętrzym API.",
+    siteUrl: "https://planets-fact-terejko.netlify.app",
+    gitHubUrl: "https://github.com/jarekTerejko/planets-fact-site",
     languages: ["JavaScript"],
     tools: ["react", "styled components"],
   },
