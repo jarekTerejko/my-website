@@ -12,6 +12,7 @@ import Countries1 from "./images/portfolio/desktop/image-portfolio-countries.jpg
 import Coffeeroasters1 from "./images/portfolio/desktop/image-portfolio-coffeeroasters.jpg";
 import Tip1 from "./images/portfolio/desktop/image-portfolio-tip.jpg";
 import Planets1 from "./images/portfolio/desktop/image-portfolio-planets.jpg";
+import Space1 from "./images/portfolio/desktop/image-portfolio-space.jpg";
 import Manage2 from "./images/portfolio/tablet/image-portfolio-manage.jpg";
 import Bookmark2 from "./images/portfolio/tablet/image-portfolio-bookmark.jpg";
 import Fylo2 from "./images/portfolio/tablet/image-portfolio-fylo.jpg";
@@ -26,6 +27,7 @@ import Countries2 from "./images/portfolio/tablet/image-portfolio-countries.jpg"
 import Coffeeroasters2 from "./images/portfolio/tablet/image-portfolio-coffeeroasters.jpg";
 import Tip2 from "./images/portfolio/tablet/image-portfolio-tip.jpg";
 import Planets2 from "./images/portfolio/tablet/image-portfolio-planets.jpg";
+import Space2 from "./images/portfolio/tablet/image-portfolio-space.jpg";
 import Manage3 from "./images/portfolio/mobile/image-portfolio-manage.jpg";
 import Bookmark3 from "./images/portfolio/mobile/image-portfolio-bookmark.jpg";
 import Fylo3 from "./images/portfolio/mobile/image-portfolio-fylo.jpg";
@@ -40,6 +42,7 @@ import Countries3 from "./images/portfolio/mobile/image-portfolio-countries.jpg"
 import Coffeeroasters3 from "./images/portfolio/mobile/image-portfolio-coffeeroasters.jpg";
 import Tip3 from "./images/portfolio/mobile/image-portfolio-tip.jpg";
 import Planets3 from "./images/portfolio/mobile/image-portfolio-planets.jpg";
+import Space3 from "./images/portfolio/mobile/image-portfolio-space.jpg";
 import Manage4 from "./images/project/desktop/image-manage-hero.jpg";
 import Manage7 from "./images/project/tablet/image-manage-hero.jpg";
 import Manage8 from "./images/project/mobile/image-manage-hero.jpg";
@@ -80,6 +83,9 @@ import Tip8 from "./images/project/mobile/image-tip-hero.jpg";
 import Planets4 from "./images/project/desktop/image-planets-hero.jpg";
 import Planets7 from "./images/project/tablet/image-planets-hero.jpg";
 import Planets8 from "./images/project/mobile/image-planets-hero.jpg";
+import Space4 from "./images/project/desktop/image-space-hero.jpg";
+import Space7 from "./images/project/tablet/image-space-hero.jpg";
+import Space8 from "./images/project/mobile/image-space-hero.jpg";
 import Manage5 from "./images/project/desktop/image-manage-preview-1.jpg";
 import Bookmark5 from "./images/project/desktop/image-bookmark-preview-1.jpg";
 import Fylo5 from "./images/project/desktop/image-fylo-preview-1.jpg";
@@ -94,6 +100,7 @@ import Countries5 from "./images/project/desktop/image-countries-preview-1.jpg";
 import Coffeeroasters5 from "./images/project/desktop/image-coffeeroasters-preview-1.jpg";
 import Tip5 from "./images/project/desktop/image-tip-preview-1.jpg";
 import Planets5 from "./images/project/desktop/image-planets-preview-1.jpg";
+import Space5 from "./images/project/desktop/image-space-preview-1.jpg";
 import Manage6 from "./images/project/desktop/image-manage-preview-2.jpg";
 import Bookmark6 from "./images/project/desktop/image-bookmark-preview-2.jpg";
 import Fylo6 from "./images/project/desktop/image-fylo-preview-2.jpg";
@@ -108,6 +115,7 @@ import Countries6 from "./images/project/desktop/image-countries-preview-2.jpg";
 import Coffeeroasters6 from "./images/project/desktop/image-coffeeroasters-preview-2.jpg";
 import Tip6 from "./images/project/desktop/image-tip-preview-2.jpg";
 import Planets6 from "./images/project/desktop/image-planets-preview-2.jpg";
+import Space6 from "./images/project/desktop/image-space-preview-2.jpg";
 
 export const dataProjects = [
   {
@@ -511,6 +519,38 @@ export const dataProjects = [
       "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna, a jej głównym zadaniem jest wyświetlenie podstawowych informacji o planetach w układzie słonecznym. Dane zapisane są w lokalnym pliku data.json. Asynkroczny kod pobiera te dane, tworząc wrażenie łączenia się z zewnętrzym API.",
     siteUrl: "https://planets-fact-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/planets-fact-site",
+    languages: ["JavaScript"],
+    tools: ["react", "styled components"],
+  },
+  {
+    id: 15,
+    images: {
+      img1: Space1,
+      img2: Space2,
+      img3: Space3,
+      img4: Space4,
+      img5: Space5,
+      img6: Space6,
+      img7: Space7,
+      img8: Space8,
+    },
+    title: "Space Tourism Website",
+    goals: [
+      "SPA",
+      "responsywność",
+      "Styled Components",
+      "multi-page",
+      "mobilne menu",
+      "zarządznie stanem aplikacji",
+      "animowany loader",
+      "React Router",
+    ],
+    descriptionShort:
+      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Za routing odpowiada React Router.",
+    descriptionLong:
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna. Dane zapisane są w lokalnym pliku data.json. Asynkroczny kod pobiera te dane, tworząc wrażenie łączenia się z zewnętrzym API.",
+    siteUrl: "https://space-tourism-website-terejko.netlify.app",
+    gitHubUrl: "https://github.com/jarekTerejko/space-tourism-website",
     languages: ["JavaScript"],
     tools: ["react", "styled components"],
   },
