@@ -4,6 +4,7 @@ import ContactForm from "../components/SectionContactForm";
 import ContactIntro from "../components/SectionContactIntro";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
+import ScrollToTopBtn from "../components/ScrollToTopBtn";
 
 const Contact = () => {
   const [contactData, setContactData] = useState(null);
@@ -58,6 +59,7 @@ const Contact = () => {
           animate="visible"
           exit="exit"
         >
+          <ScrollToTopBtn />
           <ContactIntro contactData={contactData} />
           <ContactForm />
           <Footer />
