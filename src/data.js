@@ -14,6 +14,8 @@ import Tip1 from "./images/portfolio/desktop/image-portfolio-tip.jpg";
 import Planets1 from "./images/portfolio/desktop/image-portfolio-planets.jpg";
 import Space1 from "./images/portfolio/desktop/image-portfolio-space.jpg";
 import Galleria1 from "./images/portfolio/desktop/image-portfolio-galleria.jpg";
+import GithubUser1 from "./images/portfolio/desktop/image-portfolio-github-user.jpg";
+import ArchStudio1 from "./images/portfolio/desktop/image-portfolio-arch.jpg";
 import Manage2 from "./images/portfolio/tablet/image-portfolio-manage.jpg";
 import Bookmark2 from "./images/portfolio/tablet/image-portfolio-bookmark.jpg";
 import Fylo2 from "./images/portfolio/tablet/image-portfolio-fylo.jpg";
@@ -30,6 +32,8 @@ import Tip2 from "./images/portfolio/tablet/image-portfolio-tip.jpg";
 import Planets2 from "./images/portfolio/tablet/image-portfolio-planets.jpg";
 import Space2 from "./images/portfolio/tablet/image-portfolio-space.jpg";
 import Galleria2 from "./images/portfolio/tablet/image-portfolio-galleria.jpg";
+import GithubUser2 from "./images/portfolio/tablet/image-portfolio-github-user.jpg";
+import ArchStudio2 from "./images/portfolio/tablet/image-portfolio-arch.jpg";
 import Manage3 from "./images/portfolio/mobile/image-portfolio-manage.jpg";
 import Bookmark3 from "./images/portfolio/mobile/image-portfolio-bookmark.jpg";
 import Fylo3 from "./images/portfolio/mobile/image-portfolio-fylo.jpg";
@@ -46,6 +50,8 @@ import Tip3 from "./images/portfolio/mobile/image-portfolio-tip.jpg";
 import Planets3 from "./images/portfolio/mobile/image-portfolio-planets.jpg";
 import Space3 from "./images/portfolio/mobile/image-portfolio-space.jpg";
 import Galleria3 from "./images/portfolio/mobile/image-portfolio-galleria.jpg";
+import GithubUser3 from "./images/portfolio/mobile/image-portfolio-github-user.jpg";
+import ArchStudio3 from "./images/portfolio/mobile/image-portfolio-arch.jpg";
 import Manage4 from "./images/project/desktop/image-manage-hero.jpg";
 import Manage7 from "./images/project/tablet/image-manage-hero.jpg";
 import Manage8 from "./images/project/mobile/image-manage-hero.jpg";
@@ -92,6 +98,12 @@ import Space8 from "./images/project/mobile/image-space-hero.jpg";
 import Galleria4 from "./images/project/desktop/image-galleria-hero.jpg";
 import Galleria7 from "./images/project/tablet/image-galleria-hero.jpg";
 import Galleria8 from "./images/project/mobile/image-galleria-hero.jpg";
+import GithubUser4 from "./images/project/desktop/image-github-user-hero.jpg";
+import GithubUser7 from "./images/project/tablet/image-github-user-hero.jpg";
+import GithubUser8 from "./images/project/mobile/image-github-user-hero.jpg";
+import ArchStudio4 from "./images/project/desktop/image-arch-hero.jpg";
+import ArchStudio7 from "./images/project/tablet/image-arch-hero.jpg";
+import ArchStudio8 from "./images/project/mobile/image-arch-hero.jpg";
 import Manage5 from "./images/project/desktop/image-manage-preview-1.jpg";
 import Bookmark5 from "./images/project/desktop/image-bookmark-preview-1.jpg";
 import Fylo5 from "./images/project/desktop/image-fylo-preview-1.jpg";
@@ -108,6 +120,8 @@ import Tip5 from "./images/project/desktop/image-tip-preview-1.jpg";
 import Planets5 from "./images/project/desktop/image-planets-preview-1.jpg";
 import Space5 from "./images/project/desktop/image-space-preview-1.jpg";
 import Galleria5 from "./images/project/desktop/image-galleria-preview-1.jpg";
+import GithubUser5 from "./images/project/desktop/image-github-user-preview-1.jpg";
+import ArchStudio5 from "./images/project/desktop/image-arch-preview-1.jpg";
 import Manage6 from "./images/project/desktop/image-manage-preview-2.jpg";
 import Bookmark6 from "./images/project/desktop/image-bookmark-preview-2.jpg";
 import Fylo6 from "./images/project/desktop/image-fylo-preview-2.jpg";
@@ -124,6 +138,8 @@ import Tip6 from "./images/project/desktop/image-tip-preview-2.jpg";
 import Planets6 from "./images/project/desktop/image-planets-preview-2.jpg";
 import Galleria6 from "./images/project/desktop/image-galleria-preview-2.jpg";
 import Space6 from "./images/project/desktop/image-space-preview-2.jpg";
+import GithubUser6 from "./images/project/desktop/image-github-user-preview-2.jpg";
+import ArchStudio6 from "./images/project/desktop/image-arch-preview-2.jpg";
 
 export const dataProjects = [
   {
@@ -309,7 +325,7 @@ export const dataProjects = [
     descriptionShort:
       "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Za routing odpowiada React Router.",
     descriptionLong:
-      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA  składa sie z czterech stron i jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Nawigacja pomiędzy stronami to zasługa React Router. W tym projekcie po raz pierwszy użyłem Styled Components. Walidacja formularza po stronie klienta (bez użycia zewnętrzenj biblioteki) wraz z podpowiedziami dla użytkownika zapobiega przesłaniu niepełnych lub błędnyh danych.",
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA  składa sie z czterech stron i jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Nawigacja pomiędzy stronami to zasługa React Router. W tym projekcie po raz pierwszy użyłem Styled Components. Walidacja formularza po stronie klienta (bez użycia zewnętrzenj biblioteki) wraz z podpowiedziami dla użytkownika zapobiega przesłaniu niepełnych lub błędnych danych.",
     siteUrl: "https://pay-api-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/fem-pay-api",
     languages: ["JavaScript"],
@@ -334,6 +350,7 @@ export const dataProjects = [
       "edycja zadań",
       "Styled Components",
       "dark mode / light mode",
+      "zarządznie stanem aplikacji",
     ],
     descriptionShort:
       "Projekt wymagał ode mnie zbudowania aplikacji TODO. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Korzystający z niej dostaje kilka ciekawych opcji, których próżno szukać w innych tego typu...",
@@ -343,7 +360,7 @@ export const dataProjects = [
     gitHubUrl:
       "https://github.com/jarekTerejko/fem-challenges-solutions/tree/main/todo-app-main",
     languages: ["JavaScript"],
-    tools: ["react", "styled components"],
+    tools: ["react", "styled components", "Framer Motion"],
   },
   // {
   //   id: 9,
@@ -400,11 +417,11 @@ export const dataProjects = [
     descriptionShort:
       "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Za routing odpowiada React Router.",
     descriptionLong:
-      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA składa sie z pięciu stron i jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Nawigacja pomiędzy stronami to zasługa React Router. Walidacja formularza po stronie klienta (bez użycia zewnętrzenj biblioteki) wraz z podpowiedziami dla użytkownika zapobiega przesłaniu niepełnych lub błędnyh danych.",
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA składa sie z pięciu stron i jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Nawigacja pomiędzy stronami to zasługa React Router. Walidacja formularza po stronie klienta (bez użycia zewnętrzenj biblioteki) wraz z podpowiedziami dla użytkownika zapobiega przesłaniu niepełnych lub błędnych danych.",
     siteUrl: "https://designo-multipage-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/designo-multipage",
     languages: ["JavaScript"],
-    tools: ["react", "styled components", "API"],
+    tools: ["react", "styled components"],
   },
   {
     id: 11,
@@ -459,6 +476,7 @@ export const dataProjects = [
       "sticky nav",
       "accordion",
       "modal",
+      "zarządznie stanem aplikacji",
     ],
     descriptionShort:
       "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Za routing odpowiada React Router.",
@@ -522,13 +540,13 @@ export const dataProjects = [
       "React Router",
     ],
     descriptionShort:
-      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Za routing odpowiada React Router.",
+      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Za routing odpowiada React Router.",
     descriptionLong:
       "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna, a jej głównym zadaniem jest wyświetlenie podstawowych informacji o planetach w układzie słonecznym. Dane zapisane są w lokalnym pliku data.json. Asynkroczny kod pobiera te dane, tworząc wrażenie łączenia się z zewnętrzym API.",
     siteUrl: "https://planets-fact-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/planets-fact-site",
     languages: ["JavaScript"],
-    tools: ["react", "styled components"],
+    tools: ["react", "styled components", "Framer Motion"],
   },
   {
     id: 15,
@@ -554,13 +572,13 @@ export const dataProjects = [
       "React Router",
     ],
     descriptionShort:
-      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Za routing odpowiada React Router.",
+      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Za routing odpowiada React Router.",
     descriptionLong:
       "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna. Dane zapisane są w lokalnym pliku data.json. Asynkroczny kod pobiera te dane, tworząc wrażenie łączenia się z zewnętrzym API.",
     siteUrl: "https://space-tourism-website-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/space-tourism-website",
     languages: ["JavaScript"],
-    tools: ["react", "styled components"],
+    tools: ["react", "styled components", "Framer Motion"],
   },
   {
     id: 16,
@@ -580,18 +598,88 @@ export const dataProjects = [
       "responsywność",
       "Styled Components",
       "Slider",
-      "mobilne menu",
       "zarządznie stanem aplikacji",
       "animowany loader",
       "Masonry layout",
+      "lightbox",
     ],
     descriptionShort:
-      "Projekt zbudowałem z użyciem bilioteki React. Aplikacja jest w pełni responsywna z siatką Masonry layout",
+      "Projekt zbudowałem z użyciem bilioteki React. Aplikacja jest w pełni responsywna, widok dla większych ekranów jest siatką Masonry layout.",
     descriptionLong:
       "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna. Dane zapisane są w lokalnym pliku data.json. Asynkroczny kod pobiera te dane, tworząc wrażenie łączenia się z zewnętrzym API.",
     siteUrl: "https://galleria-slideshow-site-terejko.netlify.app/",
     gitHubUrl: "https://github.com/jarekTerejko/galleria-slideshow-site",
     languages: ["JavaScript"],
-    tools: ["react", "styled components"],
+    tools: ["react", "styled components", "Framer Motion"],
+  },
+  {
+    id: 17,
+    images: {
+      img1: GithubUser1,
+      img2: GithubUser2,
+      img3: GithubUser3,
+      img4: GithubUser4,
+      img5: GithubUser5,
+      img6: GithubUser6,
+      img7: GithubUser7,
+      img8: GithubUser8,
+    },
+    title: "GitHub User Search",
+    goals: [
+      "SPA",
+      "responsywność",
+      "Styled Components",
+      "animowany loader",
+      "dark mode / light mode",
+      "zarządznie stanem aplikacji",
+      "komunikacja z API",
+    ],
+    descriptionShort:
+      "Projekt wymagał ode mnie zbudowania aplikacji komunikującej się z zewnętrzym API. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components.",
+    descriptionLong:
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna. Aplikacja komunikuje się z GitHub Users API. Asynchroniczny kod pobiera dane o użytkownikach serwisu GitHub, a następnie wybrane z nich, są w przejrzystej formie graficznej prezentowane na ekranie.",
+    siteUrl: "https://github-user-search-terejko.netlify.app",
+    gitHubUrl: "https://github.com/jarekTerejko/github-user-search",
+    languages: ["JavaScript"],
+    tools: ["react", "styled components", "Framer Motion", "API"],
+  },
+  {
+    id: 18,
+    images: {
+      img1: ArchStudio1,
+      img2: ArchStudio2,
+      img3: ArchStudio3,
+      img4: ArchStudio4,
+      img5: ArchStudio5,
+      img6: ArchStudio6,
+      img7: ArchStudio7,
+      img8: ArchStudio8,
+    },
+    title: "Arch Studio",
+    goals: [
+      "SPA",
+      "responsywność",
+      "animowany loader",
+      "Styled Components",
+      "walidacja formularza",
+      "multi-page",
+      "slider",
+      "mapa",
+      "komunikacja z API",
+    ],
+    descriptionShort:
+      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Za routing odpowiada React Router.",
+    descriptionLong:
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA składa sie z 4 stron i jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Na stronie głównej umieszczony został slider. Nawigacja pomiędzy stronami to zasługa React Router. Walidacja formularza po stronie klienta (bez użycia zewnętrzenj biblioteki) wraz z podpowiedziami dla użytkownika zapobiega przesłaniu niepełnych lub błędnych danych. ",
+    siteUrl: "https://arch-studio-terejko.netlify.app",
+    gitHubUrl: "https://github.com/jarekTerejko/arch-studio-multi-page-website",
+    languages: ["JavaScript"],
+    tools: [
+      "react",
+      "styled components",
+      "Framer Motion",
+      "React Leaflet",
+      "API",
+    ],
   },
 ];
