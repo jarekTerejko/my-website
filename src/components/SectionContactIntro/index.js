@@ -13,14 +13,28 @@ import {
 } from "./SectionIntroElements";
 import GitHubDark from "../../images/github--dark.svg";
 import LinkedInDark from "../../images/linkedin--dark.svg";
+import Lottie from "lottie-web";
+import Meeting from "../../images/contact/meeting.json";
+import { useEffect } from "react";
 
 const ContactIntro = ({ contactData }) => {
+  useEffect(() => {
+    const animation = Lottie.loadAnimation({
+      container: document.querySelector(".meeting"),
+      animationData: Meeting,
+    });
+
+    return () => {
+      animation.destroy();
+    };
+  }, []);
   return (
     <ContactIntroWrapper>
       <WrapperEl>
         <ContactIntroCols>
           <ContactIntroColLeft>
             <HeroHeading as="h2">Poznajmy się</HeroHeading>
+            <div className="meeting" style={{ maxWidth: 300 }}></div>
           </ContactIntroColLeft>
           <ContactIntroColRight>
             <DescriptionText>{contactData.getInTouchText}</DescriptionText>

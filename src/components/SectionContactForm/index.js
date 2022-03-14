@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HeroHeading } from "../Hero/HeroElements";
 import { WrapperEl } from "../Wrapper/WrapperElement";
 import {
@@ -17,8 +17,21 @@ import {
 } from "./SectionFormElements";
 import ChevronsIcon from "../../images/contact/chevrons-right.svg";
 import Modal from "../Modal";
+import Msg from "../../images/contact/msg.json";
+import Lottie from "lottie-web";
 
 const ContactForm = () => {
+  useEffect(() => {
+    const animation = Lottie.loadAnimation({
+      container: document.querySelector(".msg"),
+      animationData: Msg,
+    });
+
+    return () => {
+      animation.destroy();
+    };
+  }, []);
+
   const [inputValues, setInputValues] = useState({
     firstName: "",
     email: "",
@@ -91,6 +104,7 @@ const ContactForm = () => {
           <ContactFormCols>
             <ContactFormColLeft>
               <HeroHeading as="h2">Kontakt</HeroHeading>
+              <div className="msg" style={{ maxWidth: 300 }}></div>
             </ContactFormColLeft>
             <ContactFormColRight>
               <ContactFormEl onSubmit={handleSubmit}>
