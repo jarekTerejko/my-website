@@ -21,6 +21,7 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
     return () => {
       window.removeEventListener("scroll", changeNav);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const closeMenu = () => {
