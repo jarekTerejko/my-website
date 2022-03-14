@@ -55,6 +55,48 @@ const ProjectDetails = () => {
   ) : (
     <ProjectDetailsWrapper>
       <WrapperEl>
+        <ProjectDetailsLinksWrapper>
+          <ProjectDetailsLinkLeftWrapper>
+            <ProjectDetailsLink
+              to={`/project/${
+                index === 0 ? `${dataProjects.length}` : `${index}`
+              }`}
+            >
+              <ImageEl style={{ marginRight: "1rem" }} src={ChevronLeft} />
+              <div>
+                <ProjectDetailsName style={{ marginBottom: ".5rem" }}>
+                  {index === 0
+                    ? `${dataProjects[dataProjects.length - 1].title}`
+                    : `${dataProjects[index - 1].title}`}
+                </ProjectDetailsName>
+                <ProjectDetailsLinkText>Poprzedni</ProjectDetailsLinkText>
+              </div>
+            </ProjectDetailsLink>
+          </ProjectDetailsLinkLeftWrapper>
+          <ProjectDetailsLinkRightWrapper>
+            <ProjectDetailsLink
+              to={`/project/${
+                index === dataProjects.length - 1 ? "1" : `${index + 2}`
+              }`}
+            >
+              <div style={{ textAlign: "right" }}>
+                <ProjectDetailsName style={{ marginBottom: ".5rem" }}>
+                  {index === dataProjects.length - 1
+                    ? `${dataProjects[0].title}`
+                    : `${dataProjects[index + 1].title}`}
+                </ProjectDetailsName>
+                <ProjectDetailsLinkText>Następny</ProjectDetailsLinkText>
+              </div>
+              <ImageEl style={{ marginLeft: "1rem" }} src={ChevronRight} />
+            </ProjectDetailsLink>
+          </ProjectDetailsLinkRightWrapper>
+        </ProjectDetailsLinksWrapper>
+        <HeadingSecondary
+          as="h1"
+          style={{ marginBottom: "5rem", fontSize: "4rem" }}
+        >
+          {dataProject.title}
+        </HeadingSecondary>
         <ProjectDetailsIntroBgImg
           img4={dataProject.images.img4}
           img7={dataProject.images.img7}
