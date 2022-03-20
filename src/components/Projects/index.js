@@ -18,6 +18,7 @@ import {
 import { ImageEl } from "../Image/ImageElement";
 import X from "../../images/x-remove-filter.svg";
 import { FiltersWrapper } from "../FiltersWrapper/FiltersWrapperEl";
+import { ButtonTransparent } from "../ButtonTransparent/ButtonTransparentElement";
 
 const Projects = ({
   portfolioProjects,
@@ -45,6 +46,7 @@ const Projects = ({
   return (
     <>
       <ProjectsWrapper>
+        {console.log(portfolioProjects)}
         <WrapperEl>
           {filteredProjects.length > 0 ? (
             <FiltersWrapper
@@ -116,16 +118,51 @@ const Projects = ({
                             );
                           })}
                         </DescriptionText>
-                        <LinkR to={`/project/${i + 1}`}>Więcej</LinkR>
+                        <LinkR
+                          to={`/project/${i + 1}`}
+                          style={{
+                            margin: "0 1rem 1rem 0",
+                            padding: "1.5rem 0",
+                            width: "16rem",
+                            textAlign: "center",
+                          }}
+                        >
+                          Więcej
+                        </LinkR>
+                        <ButtonTransparent
+                          as="a"
+                          target="_blank"
+                          href={project.gitHubUrl}
+                          style={{
+                            margin: "0 1rem 1rem 0",
+                            padding: "1.5rem 0",
+                            width: "16rem",
+                            textAlign: "center",
+                          }}
+                        >
+                          Github
+                        </ButtonTransparent>
+                        <ButtonTransparent
+                          as="a"
+                          target="_blank"
+                          href={project.siteUrl}
+                          style={{
+                            margin: "0 1rem 1rem 0",
+                            padding: "1.5rem 0",
+                            width: "16rem",
+                            textAlign: "center",
+                          }}
+                        >
+                          Odwiedź
+                        </ButtonTransparent>
                       </ProjectsColRight>
                     </ProjectsCols>
                   );
                 })
               : portfolioProjects.map((project, i) => {
-                  filterArr = [
-                    ...project.languages,
-                    ...project.tools,
-                  ].map((f) => f.toLowerCase());
+                  filterArr = [...project.languages, ...project.tools].map(
+                    (f) => f.toLowerCase()
+                  );
                   if (filteredProjects.every((f) => filterArr.includes(f))) {
                     return (
                       <ProjectsCols
@@ -170,7 +207,43 @@ const Projects = ({
                               );
                             })}
                           </DescriptionText>
-                          <LinkR to={`/project/${i + 1}`}>Więcej</LinkR>
+                          <LinkR
+                            to={`/project/${i + 1}`}
+                            style={{
+                              margin: "0 1rem 1rem 0",
+                              padding: "1.5rem 0",
+                              width: "16rem",
+                              textAlign: "center",
+                            }}
+                          >
+                            Więcej
+                          </LinkR>
+                          <ButtonTransparent
+                            as="a"
+                            target="_blank"
+                            href={project.gitHubUrl}
+                            style={{
+                              margin: "0 1rem 1rem 0",
+                              padding: "1.5rem 0",
+                              width: "16rem",
+                              textAlign: "center",
+                            }}
+                          >
+                            Github
+                          </ButtonTransparent>
+                          <ButtonTransparent
+                            as="a"
+                            target="_blank"
+                            href={project.siteUrl}
+                            style={{
+                              margin: "0 1rem 1rem 0",
+                              padding: "1.5rem 0",
+                              width: "16rem",
+                              textAlign: "center",
+                            }}
+                          >
+                            Odwiedź
+                          </ButtonTransparent>
                         </ProjectsColRight>
                       </ProjectsCols>
                     );
