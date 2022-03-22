@@ -94,6 +94,18 @@ const Projects = ({
                         <DescriptionText>
                           {project.descriptionShort}
                         </DescriptionText>
+                        <LinkR
+                          to={`/project/${i + 1}`}
+                          style={{
+                            margin: "0 1rem 4rem 0",
+                            padding: "1.5rem 0",
+                            width: "16rem",
+                            textAlign: "center",
+                          }}
+                          darkBg
+                        >
+                          Więcej
+                        </LinkR>
                         <DescriptionText style={{ marginBottom: "1rem" }}>
                           {project.languages.map((lang, i, arr) => {
                             return (
@@ -118,17 +130,6 @@ const Projects = ({
                             );
                           })}
                         </DescriptionText>
-                        <LinkR
-                          to={`/project/${i + 1}`}
-                          style={{
-                            margin: "0 1rem 1rem 0",
-                            padding: "1.5rem 0",
-                            width: "16rem",
-                            textAlign: "center",
-                          }}
-                        >
-                          Więcej
-                        </LinkR>
                         <ButtonTransparent
                           as="a"
                           target="_blank"
@@ -183,6 +184,18 @@ const Projects = ({
                           <DescriptionText>
                             {project.descriptionShort}
                           </DescriptionText>
+                          <LinkR
+                            to={`/project/${i + 1}`}
+                            style={{
+                              margin: "0 1rem 4rem 0",
+                              padding: "1.5rem 0",
+                              width: "16rem",
+                              textAlign: "center",
+                            }}
+                            darkBg
+                          >
+                            Więcej
+                          </LinkR>
                           <DescriptionText style={{ marginBottom: "1rem" }}>
                             {project.languages.map((lang, i, arr) => {
                               return (
