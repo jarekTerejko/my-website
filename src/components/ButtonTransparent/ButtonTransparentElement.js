@@ -10,6 +10,7 @@ export const ButtonTransparent = styled.button`
   letter-spacing: 2px;
   font-weight: var(--weight-bold);
   transition: background-color var(--transition), color var(--transition);
+  cursor: pointer;
 
   /* &:hover {
     background: var(--color-dark-blue);
