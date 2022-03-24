@@ -11,6 +11,10 @@ export const ButtonTransparent = styled.button`
   font-weight: var(--weight-bold);
   transition: background-color var(--transition), color var(--transition);
   cursor: pointer;
+  color: ${({ darkBg }) =>
+    darkBg ? "var(--color-very-light-gray)" : "var(--color-dark-blue)"};
+  background: ${({ darkBg }) =>
+    darkBg ? "var(--color-dark-blue)" : "var(--color-very-light-gray)"};
 
   /* &:hover {
     background: var(--color-dark-blue);

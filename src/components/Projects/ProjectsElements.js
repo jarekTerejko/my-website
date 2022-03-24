@@ -12,10 +12,7 @@ export const ProjectsCols = styled(motion.article)`
   gap: 30px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "col1 col2";
-
-  &:first-child {
-    padding-top: 0;
-  }
+  scroll-margin-top: 6rem;
 
   &:nth-child(even) {
     grid-template-areas: "col2 col1";

@@ -30,6 +30,7 @@ import { DescriptionText } from "../DecriptionText/DescriptionTextElement";
 import { ButtonTransparent } from "../ButtonTransparent/ButtonTransparentElement";
 import Question from "../SectionQuestion";
 import { Tag } from "../Tag/TagElement";
+import { HashLink } from "react-router-hash-link";
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -90,7 +91,12 @@ const ProjectDetails = () => {
               <ImageEl style={{ marginLeft: "1rem" }} src={ChevronRight} />
             </ProjectDetailsLink>
           </ProjectDetailsLinkRightWrapper>
-        </ProjectDetailsLinksWrapper>
+        </ProjectDetailsLinksWrapper>        
+        <HashLink className="hashlink"
+          to={`/portfolio/#${dataProject.id}`}
+        >
+        Wróć
+        </HashLink>
         <HeadingSecondary
           as="h1"
           style={{ marginBottom: "5rem", fontSize: "4rem" }}

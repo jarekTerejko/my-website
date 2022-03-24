@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { WrapperEl } from "../Wrapper/WrapperElement";
 import {
   ProjectsColLeft,
@@ -26,12 +25,12 @@ const Projects = ({
   addFilter,
   removeFilter,
 }) => {
-  // console.log(filteredProjects);
+  
   let filterArr;
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [filteredProjects]);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [filteredProjects]);
 
   const containerVariants = {
     hidden: {
@@ -39,14 +38,13 @@ const Projects = ({
     },
     visible: {
       opacity: 1,
-      transition: { delay: 0.1, duration: 0.5 },
+      transition: { delay: 0.6, duration: 0.5 },
     },
   };
 
   return (
     <>
       <ProjectsWrapper>
-        {console.log(portfolioProjects)}
         <WrapperEl>
           {filteredProjects.length > 0 ? (
             <FiltersWrapper
@@ -73,6 +71,7 @@ const Projects = ({
         </WrapperEl>
         <WrapperEl>
           <ProjectsInnerWrapper>
+            {console.log(portfolioProjects)}
             {filteredProjects.length === 0
               ? portfolioProjects.map((project, i) => {
                   return (
@@ -81,6 +80,7 @@ const Projects = ({
                       initial="hidden"
                       animate="visible"
                       key={i}
+                      id={project.id}
                     >
                       <ProjectsColLeft
                         projectsBgImgD={project.images.img1}
@@ -89,7 +89,7 @@ const Projects = ({
                       ></ProjectsColLeft>
                       <ProjectsColRight>
                         <HeadingSecondary marginBottom="4rem">
-                          {project.title}
+                          {`${i + 1}. ${project.title}`}
                         </HeadingSecondary>
                         <DescriptionText>
                           {project.descriptionShort}
@@ -102,7 +102,7 @@ const Projects = ({
                             width: "16rem",
                             textAlign: "center",
                           }}
-                          darkBg
+                          $darkBg
                         >
                           Więcej
                         </LinkR>
@@ -192,7 +192,7 @@ const Projects = ({
                               width: "16rem",
                               textAlign: "center",
                             }}
-                            darkBg
+                            $darkBg
                           >
                             Więcej
                           </LinkR>

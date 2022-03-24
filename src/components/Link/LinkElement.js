@@ -11,10 +11,10 @@ export const LinkR = styled(Link)`
   letter-spacing: 2px;
   font-weight: var(--weight-bold);
   transition: background-color var(--transition), color var(--transition);
-  color: ${({ darkBg }) =>
-    darkBg ? "var(--color-very-light-gray)" : "var(--color-dark-blue)"};
-  background: ${({ darkBg }) =>
-    darkBg ? "var(--color-dark-blue)" : "var(--color-very-light-gray)"};
+  color: ${({ $darkBg }) =>
+    $darkBg ? "var(--color-very-light-gray)" : "var(--color-dark-blue)"};
+  background: ${({ $darkBg }) =>
+    $darkBg ? "var(--color-dark-blue)" : "var(--color-very-light-gray)"};
 
   /* &:hover {
     background: var(--color-dark-blue);
