@@ -1,7 +1,6 @@
 import ProjectDetails from "../components/ProjectDetails";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
-import ScrollToTopBtn from "../components/ScrollToTopBtn";
 
 const Project = () => {
   const containerVariants = {
@@ -26,7 +25,6 @@ const Project = () => {
         animate="visible"
         exit="exit"
       >
-        <ScrollToTopBtn />
         <ProjectDetails />
         <Footer />
       </motion.div>

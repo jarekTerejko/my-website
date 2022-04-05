@@ -7,6 +7,7 @@ import Project from "./pages/Project";
 import NotFound from "./components/NotFound";
 import Contact from "./pages/Contact";
 import { AnimatePresence } from "framer-motion";
+import ScrollToTopBtn from "./components/ScrollToTopBtn";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,7 @@ const App = () => {
         handleMenu={handleMenu}
         isOpen={isOpen}
       />
+      <ScrollToTopBtn />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact>

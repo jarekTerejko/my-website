@@ -4,7 +4,6 @@ import Projects from "../components/Projects";
 import Loader from "../components/Loader";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
-import ScrollToTopBtn from "../components/ScrollToTopBtn";
 
 const Portfolio = () => {
   const [portfolioProjects, setPortfolioProjects] = useState(null);
@@ -60,7 +59,6 @@ const Portfolio = () => {
           animate="visible"
           exit="exit"
         >
-          <ScrollToTopBtn />
           <Projects
             portfolioProjects={portfolioProjects}
             filteredProjects={filteredProjects}

@@ -5,7 +5,6 @@ import Question from "../components/SectionQuestion";
 import Loader from "../components/Loader";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
-import ScrollToTopBtn from "../components/ScrollToTopBtn";
 
 const Home = () => {
   const [texts, setTexts] = useState(null);
@@ -60,7 +59,6 @@ const Home = () => {
           animate="visible"
           exit="exit"
         >
-          <ScrollToTopBtn />
           <Hero heroText={texts.heroText} />
           <About aboutText={texts.aboutText} />
           <Question />
