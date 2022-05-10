@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
@@ -7,7 +7,9 @@ import Project from "./pages/Project";
 import NotFound from "./components/NotFound";
 import Contact from "./pages/Contact";
 import { AnimatePresence } from "framer-motion";
-import ScrollToTopBtn from "./components/ScrollToTopBtn";
+import ScrollToTopBtn from "./components/ScrollToTopBtn"; 
+
+export const ModeContext = createContext(null)
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,13 +29,23 @@ const App = () => {
     }
   };
 
+  const [mode, setMode] = useState("light");
+
+  const toggleMode = () => {
+    const nextMode = mode === "light" ? "dark" : "light";
+    setMode(nextMode);
+    document.documentElement.className = nextMode;
+  };
+
   return (
-    <>
+    <ModeContext.Provider value={{mode}}>
       <Navbar
         scrolledNav={scrolledNav}
         changeNav={changeNav}
         handleMenu={handleMenu}
         isOpen={isOpen}
+        toggleMode={toggleMode}
+        mode={mode}
       />
       <ScrollToTopBtn />
       <AnimatePresence exitBeforeEnter>
@@ -55,7 +67,7 @@ const App = () => {
           </Route>
         </Switch>
       </AnimatePresence>
-    </>
+    </ModeContext.Provider>
   );
 };
 

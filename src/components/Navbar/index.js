@@ -12,9 +12,20 @@ import {
 import Logo from "../../images/logo.svg";
 import Bars from "../../images/menu.svg";
 import X from "../../images/close.svg";
+import BarsLight from "../../images/menu--light.svg";
+import XLight from "../../images/close--light.svg";
+import Sun from "../../images/sun.svg";
+import Moon from "../../images/moon.svg";
 import { ImageEl } from "../Image/ImageElement";
 
-const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
+const Navbar = ({
+  isOpen,
+  handleMenu,
+  scrolledNav,
+  changeNav,
+  toggleMode,
+  mode,
+}) => {
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
 
@@ -39,11 +50,25 @@ const Navbar = ({ isOpen, handleMenu, scrolledNav, changeNav }) => {
           <NavbarSiteLinkR to="/" $isOpen={isOpen} onClick={closeMenu}>
             <ImageEl src={Logo} alt="Logo" />
           </NavbarSiteLinkR>
+          <NavbarMenuBtn onClick={toggleMode} style={{ display: "flex" }}>
+            {mode === "dark" ? (
+              <ImageEl src={Sun} alt="Toggle Mode" />
+            ) : (
+              <ImageEl src={Moon} alt="Toggle Mode" />
+            )}
+          </NavbarMenuBtn>
           <NavbarMenuBtn onClick={handleMenu}>
-            <ImageEl
-              src={isOpen ? `${X}` : `${Bars}`}
-              alt={isOpen ? "Close Menu" : "Open Menu"}
-            />
+            {mode === "dark" ? (
+              <ImageEl
+                src={isOpen ? `${XLight}` : `${BarsLight}`}
+                alt={isOpen ? "Close Menu" : "Open Menu"}
+              />
+            ) : (
+              <ImageEl
+                src={isOpen ? `${X}` : `${Bars}`}
+                alt={isOpen ? "Close Menu" : "Open Menu"}
+              />
+            )}
           </NavbarMenuBtn>
           <NavbarNavItems $isOpen={isOpen}>
             <NavbarNavItem>

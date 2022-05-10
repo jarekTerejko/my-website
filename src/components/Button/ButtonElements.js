@@ -20,10 +20,11 @@ export const ChevronsDownIcon = styled.img`
 export const Button = styled.a`
   position: relative;
   overflow: hidden;
+  /* background: var(--color-grayish-dark-blue); */
   background: var(--color-cyan);
-  background: var(--color-grayish-dark-blue);
   text-transform: uppercase;
   color: var(--color-very-light-gray);
+  color: #fafafa;
   padding: 1.5rem 4rem 1.5rem 0;
   font-size: 1.2rem;
   display: flex;
@@ -37,8 +38,8 @@ export const Button = styled.a`
     left: 0;
     height: 100%;
     width: 50px;
-    background: #5fb4a2;
     background: var(--color-dark-blue);
+    background: #203a4c;
   }
 
   &::after {
@@ -49,9 +50,7 @@ export const Button = styled.a`
     transform: translateX(-100%);
     width: 100%;
     height: 100%;
-
     background: linear-gradient(90deg, transparent, #fff, transparent);
-
     transition: var(--transition) transform;
   }
 

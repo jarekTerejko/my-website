@@ -27,6 +27,14 @@
   /* Design elements */
   --transition: 300ms ease;
 }
+
+html.dark {
+  --color-grayish-dark-blue: #fafafa;
+  --color-very-light-gray: #33323d;
+  --color-dark-blue: #eaeaeb;
+  --color-form-input-bg: #33323d;
+}
+
 *,
 *::before,
 *::after {

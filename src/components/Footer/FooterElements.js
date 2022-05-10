@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
-  background: var(--color-grayish-dark-blue);
+  /* background: var(--color-grayish-dark-blue); */
   padding: 1rem 0;
+  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
 
   @media screen and (max-width: 650px) {
     padding: 4rem 0;

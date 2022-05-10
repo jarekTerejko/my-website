@@ -5,6 +5,7 @@ export const ScrollToTopBtnWrapper = styled.button`
   right: 2rem;
   bottom: 6rem;
   background: var(--color-very-light-gray);
+  background: #fafafa;
   transition: opacity var(--transition);
   border: 2px solid var(--color-dark-blue);
   padding: 1rem;

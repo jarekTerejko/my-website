@@ -41,7 +41,7 @@ export const ContactFormTextInput = styled.input`
   display: block;
   width: 100%;
   padding: 1.2rem;
-  border: 1px solid transparent;
+  border: 1px solid var(--color-grayish-dark-blue);
   background: var(--color-form-input-bg);
   color: var(--color-grayish-dark-blue);
   transition: var(--transition) border-color;
@@ -75,7 +75,7 @@ export const ContactFormTextarea = styled.textarea`
   color: var(--color-grayish-dark-blue);
   padding: 1.2rem;
   width: 100%;
-  border: 1px solid transparent;
+  border: 1px solid var(--color-grayish-dark-blue);
   min-height: 10rem;
   outline: none;
   transition: var(--transition) border-color;
