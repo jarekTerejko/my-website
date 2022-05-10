@@ -706,25 +706,21 @@ export const dataProjects = [
     goals: [
       "SPA",
       "responsywność",
-      "animowany loader",
       "Styled Components",
-      "walidacja formularza",
       "multi-page",
-      "slider",
       "mapa",
       "komunikacja z API",
     ],
     descriptionShort:
       "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Za routing odpowiada React Router.",
     descriptionLong:
-      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA składa sie z 4 stron i jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Na stronie głównej umieszczony został slider. Nawigacja pomiędzy stronami to zasługa React Router. Walidacja formularza po stronie klienta (bez użycia zewnętrzenj biblioteki) wraz z podpowiedziami dla użytkownika zapobiega przesłaniu niepełnych lub błędnych danych. ",
-    siteUrl: "https://arch-studio-terejko.netlify.app",
-    gitHubUrl: "https://github.com/jarekTerejko/arch-studio-multi-page-website",
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA składa sie z 2 stron i jest w pełni responsywna. Nawigacja pomiędzy stronami to zasługa React Router.",
+    siteUrl: "https://modern-art-gallery-terejkodev.netlify.app",
+    gitHubUrl: "https://github.com/jarekTerejko/modern-art-gallery",
     languages: ["JavaScript"],
     tools: [
       "react",
       "styled components",
-      "Framer Motion",
       "React Leaflet",
       "API",
     ],
