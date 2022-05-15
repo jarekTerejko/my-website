@@ -150,58 +150,58 @@ import ArchStudio6 from "./images/project/desktop/image-arch-preview-2.jpg";
 import ArtGallery6 from "./images/project/desktop/image-art-preview-2.jpg";
 
 export const dataProjects = [
-  {
-    id: 1,
-    images: {
-      img1: Manage1,
-      img2: Manage2,
-      img3: Manage3,
-      img4: Manage4,
-      img5: Manage5,
-      img6: Manage6,
-      img7: Manage7,
-      img8: Manage8,
-    },
-    title: "Manage",
-    goals: ["responsywność", "walidacja formularza", "mobilne menu", "Slider"],
-    descriptionShort:
-      "Projekt wymagał ode mnie zbudowania w pełni resposywnej strony typu landing-page. Cel ten osiągnąłem dzięki użyciu znaczników HTML5 oraz definiowaniu styli z preprocesorem Sass (SCSS). Za interakcje odpowiada JavaScript (ES6)",
-    descriptionLong:
-      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana strona jest w pełni responsywna. Elementy, zdjęcia, czcionki, kolumny oraz cały layout płynnie dostosowuje się do szerokości viewportu. Pojawianie się mobilnego menu to zasługa własciwości transform i zmiana wartości scale. Sekcja Testimonials opiera sie na zewnętrznej wtyczce Swiper, której ogromną zaletą jest działanie bez jQuery. Pole na adres email posiada podstawową walidację po stronie przeglądarki. Całość dopełnia użycie preprocesora Sass wespół z metodologią BEM.",
-    siteUrl: "https://manage-landing-terejko.netlify.app",
-    gitHubUrl: "https://github.com/jarekTerejko/manage-landing-page",
-    languages: ["html", "css", "JavaScript"],
-    tools: ["sass"],
-  },
-  {
-    id: 2,
-    images: {
-      img1: Bookmark1,
-      img2: Bookmark2,
-      img3: Bookmark3,
-      img4: Bookmark4,
-      img5: Bookmark5,
-      img6: Bookmark6,
-      img7: Bookmark7,
-      img8: Bookmark8,
-    },
-    title: "Bookmark",
-    goals: [
-      "responsywność",
-      "walidacja formularza",
-      "mobilne menu",
-      "interatywna Sekcja Features",
-      "interatywna Sekcja FAQ",
-    ],
-    descriptionShort:
-      "Projekt wymagał ode mnie zbudowania w pełni resposywnej strony typu landing-page. Cel ten osiągnąłem dzięki użyciu znaczników HTML5 oraz definiowaniu styli z preprocesorem Sass (SCSS). Za interakcje odpowiada JavaScript (ES6).",
-    descriptionLong:
-      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana strona jest w pełni responsywna. Elementy, zdjęcia, czcionki, kolumny oraz cały layout płynnie dostosowuje się do szerokości viewportu. Widok dla telefonów posiada wysuwane menu. Niewątpliwą zaletą tego projektu są elementy, które bardzo często goszczą na stronach internetowych (Taby i FAQ). Konieczność storzenia ich od zera oraz zaplanowania logiki ich działania pozwoliło w praktyce zastosować: trawersowanie po węzłach drzewa DOM, dynamicznie dodawać i usuwać klasy odpowiedzialne za wygląd w określonym stanie. Całość dopełnia użycie preprocesora Sass wespół z metodologią BEM.",
-    siteUrl: "https://bookmark-landing-terejko.netlify.app",
-    gitHubUrl: "https://github.com/jarekTerejko/bookmark-landing-page",
-    languages: ["html", "css", "JavaScript"],
-    tools: ["sass"],
-  },
+  // {
+  //   id: 1,
+  //   images: {
+  //     img1: Manage1,
+  //     img2: Manage2,
+  //     img3: Manage3,
+  //     img4: Manage4,
+  //     img5: Manage5,
+  //     img6: Manage6,
+  //     img7: Manage7,
+  //     img8: Manage8,
+  //   },
+  //   title: "Manage",
+  //   goals: ["responsywność", "walidacja formularza", "mobilne menu", "Slider"],
+  //   descriptionShort:
+  //     "Projekt wymagał ode mnie zbudowania w pełni resposywnej strony typu landing-page. Cel ten osiągnąłem dzięki użyciu znaczników HTML5 oraz definiowaniu styli z preprocesorem Sass (SCSS). Za interakcje odpowiada JavaScript (ES6)",
+  //   descriptionLong:
+  //     "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana strona jest w pełni responsywna. Elementy, zdjęcia, czcionki, kolumny oraz cały layout płynnie dostosowuje się do szerokości viewportu. Pojawianie się mobilnego menu to zasługa własciwości transform i zmiana wartości scale. Sekcja Testimonials opiera sie na zewnętrznej wtyczce Swiper, której ogromną zaletą jest działanie bez jQuery. Pole na adres email posiada podstawową walidację po stronie przeglądarki. Całość dopełnia użycie preprocesora Sass wespół z metodologią BEM.",
+  //   siteUrl: "https://manage-landing-terejko.netlify.app",
+  //   gitHubUrl: "https://github.com/jarekTerejko/manage-landing-page",
+  //   languages: ["html", "css", "JavaScript"],
+  //   tools: ["sass"],
+  // },
+  // {
+  //   id: 2,
+  //   images: {
+  //     img1: Bookmark1,
+  //     img2: Bookmark2,
+  //     img3: Bookmark3,
+  //     img4: Bookmark4,
+  //     img5: Bookmark5,
+  //     img6: Bookmark6,
+  //     img7: Bookmark7,
+  //     img8: Bookmark8,
+  //   },
+  //   title: "Bookmark",
+  //   goals: [
+  //     "responsywność",
+  //     "walidacja formularza",
+  //     "mobilne menu",
+  //     "interatywna Sekcja Features",
+  //     "interatywna Sekcja FAQ",
+  //   ],
+  //   descriptionShort:
+  //     "Projekt wymagał ode mnie zbudowania w pełni resposywnej strony typu landing-page. Cel ten osiągnąłem dzięki użyciu znaczników HTML5 oraz definiowaniu styli z preprocesorem Sass (SCSS). Za interakcje odpowiada JavaScript (ES6).",
+  //   descriptionLong:
+  //     "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana strona jest w pełni responsywna. Elementy, zdjęcia, czcionki, kolumny oraz cały layout płynnie dostosowuje się do szerokości viewportu. Widok dla telefonów posiada wysuwane menu. Niewątpliwą zaletą tego projektu są elementy, które bardzo często goszczą na stronach internetowych (Taby i FAQ). Konieczność storzenia ich od zera oraz zaplanowania logiki ich działania pozwoliło w praktyce zastosować: trawersowanie po węzłach drzewa DOM, dynamicznie dodawać i usuwać klasy odpowiedzialne za wygląd w określonym stanie. Całość dopełnia użycie preprocesora Sass wespół z metodologią BEM.",
+  //   siteUrl: "https://bookmark-landing-terejko.netlify.app",
+  //   gitHubUrl: "https://github.com/jarekTerejko/bookmark-landing-page",
+  //   languages: ["html", "css", "JavaScript"],
+  //   tools: ["sass"],
+  // },
   // {
   //   id: 3,
   //   images: {
