@@ -702,7 +702,7 @@ export const dataProjects = [
       img7: ArtGallery7,
       img8: ArtGallery8,
     },
-    title: "Arch Studio",
+    title: "Art gallery website",
     goals: [
       "SPA",
       "responsywność",
@@ -718,11 +718,6 @@ export const dataProjects = [
     siteUrl: "https://modern-art-gallery-terejkodev.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/modern-art-gallery",
     languages: ["JavaScript"],
-    tools: [
-      "react",
-      "styled components",
-      "React Leaflet",
-      "API",
-    ],
+    tools: ["react", "styled components", "React Leaflet", "API"],
   },
 ];
