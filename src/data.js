@@ -17,6 +17,7 @@ import Galleria1 from "./images/portfolio/desktop/image-portfolio-galleria.jpg";
 import GithubUser1 from "./images/portfolio/desktop/image-portfolio-github-user.jpg";
 import ArchStudio1 from "./images/portfolio/desktop/image-portfolio-arch.jpg";
 import ArtGallery1 from "./images/portfolio/desktop/image-portfolio-art.jpg";
+import Audiophile1 from "./images/portfolio/desktop/image-portfolio-audiophile.jpg";
 import Manage2 from "./images/portfolio/tablet/image-portfolio-manage.jpg";
 import Bookmark2 from "./images/portfolio/tablet/image-portfolio-bookmark.jpg";
 import Fylo2 from "./images/portfolio/tablet/image-portfolio-fylo.jpg";
@@ -36,6 +37,7 @@ import Galleria2 from "./images/portfolio/tablet/image-portfolio-galleria.jpg";
 import GithubUser2 from "./images/portfolio/tablet/image-portfolio-github-user.jpg";
 import ArchStudio2 from "./images/portfolio/tablet/image-portfolio-arch.jpg";
 import ArtGallery2 from "./images/portfolio/tablet/image-portfolio-art.jpg";
+import Audiophile2 from "./images/portfolio/tablet/image-portfolio-audiophile.jpg";
 import Manage3 from "./images/portfolio/mobile/image-portfolio-manage.jpg";
 import Bookmark3 from "./images/portfolio/mobile/image-portfolio-bookmark.jpg";
 import Fylo3 from "./images/portfolio/mobile/image-portfolio-fylo.jpg";
@@ -55,6 +57,7 @@ import Galleria3 from "./images/portfolio/mobile/image-portfolio-galleria.jpg";
 import GithubUser3 from "./images/portfolio/mobile/image-portfolio-github-user.jpg";
 import ArchStudio3 from "./images/portfolio/mobile/image-portfolio-arch.jpg";
 import ArtGallery3 from "./images/portfolio/mobile/image-portfolio-art.jpg";
+import Audiophile3 from "./images/portfolio/mobile/image-portfolio-audiophile.jpg";
 import Manage4 from "./images/project/desktop/image-manage-hero.jpg";
 import Manage7 from "./images/project/tablet/image-manage-hero.jpg";
 import Manage8 from "./images/project/mobile/image-manage-hero.jpg";
@@ -110,6 +113,9 @@ import ArchStudio8 from "./images/project/mobile/image-arch-hero.jpg";
 import ArtGallery4 from "./images/project/desktop/image-art-hero.jpg";
 import ArtGallery7 from "./images/project/tablet/image-art-hero.jpg";
 import ArtGallery8 from "./images/project/mobile/image-art-hero.jpg";
+import Audiophile4 from "./images/project/desktop/image-audiophile-hero.jpg";
+import Audiophile7 from "./images/project/tablet/image-audiophile-hero.jpg";
+import Audiophile8 from "./images/project/mobile/image-audiophile-hero.jpg";
 import Manage5 from "./images/project/desktop/image-manage-preview-1.jpg";
 import Bookmark5 from "./images/project/desktop/image-bookmark-preview-1.jpg";
 import Fylo5 from "./images/project/desktop/image-fylo-preview-1.jpg";
@@ -129,6 +135,7 @@ import Galleria5 from "./images/project/desktop/image-galleria-preview-1.jpg";
 import GithubUser5 from "./images/project/desktop/image-github-user-preview-1.jpg";
 import ArchStudio5 from "./images/project/desktop/image-arch-preview-1.jpg";
 import ArtGallery5 from "./images/project/desktop/image-art-preview-1.jpg";
+import Audiophile5 from "./images/project/desktop/image-audiophile-preview-1.jpg";
 import Manage6 from "./images/project/desktop/image-manage-preview-2.jpg";
 import Bookmark6 from "./images/project/desktop/image-bookmark-preview-2.jpg";
 import Fylo6 from "./images/project/desktop/image-fylo-preview-2.jpg";
@@ -148,6 +155,7 @@ import Space6 from "./images/project/desktop/image-space-preview-2.jpg";
 import GithubUser6 from "./images/project/desktop/image-github-user-preview-2.jpg";
 import ArchStudio6 from "./images/project/desktop/image-arch-preview-2.jpg";
 import ArtGallery6 from "./images/project/desktop/image-art-preview-2.jpg";
+import Audiophile6 from "./images/project/desktop/image-audiophile-preview-2.jpg";
 
 export const dataProjects = [
   // {
@@ -719,5 +727,35 @@ export const dataProjects = [
     gitHubUrl: "https://github.com/jarekTerejko/modern-art-gallery",
     languages: ["JavaScript"],
     tools: ["react", "styled components", "React Leaflet", "API"],
+  },
+  {
+    id: 20,
+    images: {
+      img1: Audiophile1,
+      img2: Audiophile2,
+      img3: Audiophile3,
+      img4: Audiophile4,
+      img5: Audiophile5,
+      img6: Audiophile6,
+      img7: Audiophile7,
+      img8: Audiophile8,
+    },
+    title: "Audiophile e-commerce website",
+    goals: [
+      "SPA",
+      "responsywność",
+      "Styled Components",
+      "multi-page",
+      "dodawanie produktów do koszyka",
+      "edycja ilości produktów w koszyku",
+    ],
+    descriptionShort:
+      "Projekt wymagał ode mnie zbudowania aplikacji typu SPA. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Za routing odpowiada React Router.",
+    descriptionLong:
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA składa sie z kilkunastu stron i jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Nawigacja pomiędzy stronami to zasługa React Router.",
+    siteUrl: "https://audiophile-terejko.netlify.app",
+    gitHubUrl: "https://github.com/jarekTerejko/audiophile-e-commerce-website",
+    languages: ["JavaScript"],
+    tools: ["react", "styled components"],
   },
 ];
