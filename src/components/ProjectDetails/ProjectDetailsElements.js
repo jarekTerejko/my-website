@@ -110,6 +110,7 @@ export const ProjectDetailsLinkLeftWrapper = styled.div`
   padding: 3rem 1rem 3rem 0;
   display: flex;
   align-self: flex-start;
+  height: 100%;
 `;
 export const ProjectDetailsLinkRightWrapper = styled.div`
   border: 1px solid var(--color-border-gray);
@@ -118,6 +119,7 @@ export const ProjectDetailsLinkRightWrapper = styled.div`
   padding: 3rem 0 3rem 1rem;
   display: flex;
   justify-content: flex-end;
+  height: 100%;
 `;
 
 export const ProjectDetailsLink = styled(NavbarSiteLinkR)`
