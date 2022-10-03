@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { WrapperEl } from "../Wrapper/WrapperElement";
 import {
   NavbarWrapper,
@@ -8,6 +8,7 @@ import {
   NavbarNavItems,
   NavbarNavItem,
   NavbarNavLinkR,
+  NavbarOverlay,
 } from "./NavbarElements";
 import Logo from "../../images/logo.svg";
 import Bars from "../../images/menu.svg";
@@ -43,8 +44,21 @@ const Navbar = ({
     }
   };
 
+  const NavbarOverlayRef = useRef();
+
+  const closeNavOverlayClick = (e) => {
+    if (NavbarOverlayRef.current === e.target) {
+      handleMenu();
+    }
+  };
+
   return (
     <NavbarWrapper $scrolledNav={scrolledNav}>
+      <NavbarOverlay
+        isOpen={isOpen}
+        ref={NavbarOverlayRef}
+        onClick={closeNavOverlayClick}
+      />
       <WrapperEl>
         <NavbarInnerWrapper $scrolledNav={scrolledNav}>
           <NavbarSiteLinkR to="/" $isOpen={isOpen} onClick={closeMenu}>

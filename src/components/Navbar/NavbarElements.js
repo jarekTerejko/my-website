@@ -12,10 +12,26 @@ export const NavbarWrapper = styled.nav`
     props.$scrolledNav ? "1px 1px 10px 1px rgba(0,0,0, .2)" : ""}; */
   transition: background-color var(--transition);
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-  
+
   /* @media screen and (max-width: 550px) {
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   } */
+`;
+
+export const NavbarOverlay = styled.div`
+  display: ${(props) => (props.isOpen ? "block" : "none")};
+  position: absolute;
+  top: 120px;
+  left: 0;
+  transition: opacity var(--transition);
+  height: calc(100vh - 60px);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.68);
+  z-index: 0;
+
+  @media screen and (max-width: 650px) {
+    top: 60px;
+  }
 `;
 
 export const NavbarInnerWrapper = styled.div`
@@ -25,7 +41,7 @@ export const NavbarInnerWrapper = styled.div`
   padding: ${(props) => (props.$scrolledNav ? "1rem 0" : `4rem 2rem`)};
   transition: padding var(--transition);
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 650px) {
     padding: 1rem 0;
   }
 `;
@@ -65,7 +81,7 @@ export const NavbarNavItems = styled.ul`
     justify-content: center;
     align-items: center;
     background: var(--color-very-light-gray);
-    width: 80%;
+    width: 70%;
     height: calc(100vh - 60px);
     box-shadow: 1px 10px 8px 1px rgba(0, 0, 0, 0.2);
   }
@@ -81,7 +97,8 @@ export const NavbarNavLinkR = styled(NavLink)`
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--color-dark-blue);
-  /* color: ${(props) => (props.$footerLink ? "var(--color-light-gray)" : "")}; */
+  /* color: ${(props) =>
+    props.$footerLink ? "var(--color-light-gray)" : ""}; */
   transition: color var(--transition);
 
   &:hover {
