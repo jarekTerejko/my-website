@@ -18,6 +18,7 @@ import GithubUser1 from "./images/portfolio/desktop/image-portfolio-github-user.
 import ArchStudio1 from "./images/portfolio/desktop/image-portfolio-arch.jpg";
 import ArtGallery1 from "./images/portfolio/desktop/image-portfolio-art.jpg";
 import Audiophile1 from "./images/portfolio/desktop/image-portfolio-audiophile.jpg";
+import IntroSection1 from "./images/portfolio/desktop/image-portfolio-intro-section.jpg";
 import Manage2 from "./images/portfolio/tablet/image-portfolio-manage.jpg";
 import Bookmark2 from "./images/portfolio/tablet/image-portfolio-bookmark.jpg";
 import Fylo2 from "./images/portfolio/tablet/image-portfolio-fylo.jpg";
@@ -38,6 +39,7 @@ import GithubUser2 from "./images/portfolio/tablet/image-portfolio-github-user.j
 import ArchStudio2 from "./images/portfolio/tablet/image-portfolio-arch.jpg";
 import ArtGallery2 from "./images/portfolio/tablet/image-portfolio-art.jpg";
 import Audiophile2 from "./images/portfolio/tablet/image-portfolio-audiophile.jpg";
+import IntroSection2 from "./images/portfolio/tablet/image-portfolio-intro-section.jpg";
 import Manage3 from "./images/portfolio/mobile/image-portfolio-manage.jpg";
 import Bookmark3 from "./images/portfolio/mobile/image-portfolio-bookmark.jpg";
 import Fylo3 from "./images/portfolio/mobile/image-portfolio-fylo.jpg";
@@ -58,6 +60,7 @@ import GithubUser3 from "./images/portfolio/mobile/image-portfolio-github-user.j
 import ArchStudio3 from "./images/portfolio/mobile/image-portfolio-arch.jpg";
 import ArtGallery3 from "./images/portfolio/mobile/image-portfolio-art.jpg";
 import Audiophile3 from "./images/portfolio/mobile/image-portfolio-audiophile.jpg";
+import IntroSection3 from "./images/portfolio/mobile/image-portfolio-intro-section.jpg";
 import Manage4 from "./images/project/desktop/image-manage-hero.jpg";
 import Manage7 from "./images/project/tablet/image-manage-hero.jpg";
 import Manage8 from "./images/project/mobile/image-manage-hero.jpg";
@@ -116,6 +119,9 @@ import ArtGallery8 from "./images/project/mobile/image-art-hero.jpg";
 import Audiophile4 from "./images/project/desktop/image-audiophile-hero.jpg";
 import Audiophile7 from "./images/project/tablet/image-audiophile-hero.jpg";
 import Audiophile8 from "./images/project/mobile/image-audiophile-hero.jpg";
+import IntroSection4 from "./images/project/desktop/image-intro-section-hero.jpg";
+import IntroSection7 from "./images/project/tablet/image-intro-section-hero.jpg";
+import IntroSection8 from "./images/project/mobile/image-intro-section-hero.jpg";
 import Manage5 from "./images/project/desktop/image-manage-preview-1.jpg";
 import Bookmark5 from "./images/project/desktop/image-bookmark-preview-1.jpg";
 import Fylo5 from "./images/project/desktop/image-fylo-preview-1.jpg";
@@ -136,6 +142,7 @@ import GithubUser5 from "./images/project/desktop/image-github-user-preview-1.jp
 import ArchStudio5 from "./images/project/desktop/image-arch-preview-1.jpg";
 import ArtGallery5 from "./images/project/desktop/image-art-preview-1.jpg";
 import Audiophile5 from "./images/project/desktop/image-audiophile-preview-1.jpg";
+import IntroSection5 from "./images/project/desktop/image-intro-section-preview-1.jpg";
 import Manage6 from "./images/project/desktop/image-manage-preview-2.jpg";
 import Bookmark6 from "./images/project/desktop/image-bookmark-preview-2.jpg";
 import Fylo6 from "./images/project/desktop/image-fylo-preview-2.jpg";
@@ -156,6 +163,7 @@ import GithubUser6 from "./images/project/desktop/image-github-user-preview-2.jp
 import ArchStudio6 from "./images/project/desktop/image-arch-preview-2.jpg";
 import ArtGallery6 from "./images/project/desktop/image-art-preview-2.jpg";
 import Audiophile6 from "./images/project/desktop/image-audiophile-preview-2.jpg";
+import IntroSection6 from "./images/project/desktop/image-intro-section-preview-2.jpg";
 
 export const dataProjects = [
   // {
@@ -755,6 +763,31 @@ export const dataProjects = [
       "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA składa sie z kilkunastu stron i jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Nawigacja pomiędzy stronami to zasługa React Router.",
     siteUrl: "https://audiophile-terejko.netlify.app",
     gitHubUrl: "https://github.com/jarekTerejko/audiophile-e-commerce-website",
+    languages: ["JavaScript"],
+    tools: ["react", "styled components"],
+  },
+  {
+    id: 21,
+    images: {
+      img1: IntroSection1,
+      img2: IntroSection2,
+      img3: IntroSection3,
+      img4: IntroSection4,
+      img5: IntroSection5,
+      img6: IntroSection6,
+      img7: IntroSection7,
+      img8: IntroSection8,
+    },
+    title: "Intro section with dropdown navigation",
+    goals: ["SPA", "responsywność", "Styled Components", "multi-page"],
+    descriptionShort:
+      "Projekt wymagał ode mnie zbudowania sekcji intro witryny internetowej, wraz z nawigacją oraz przede wszystkim dwoma przyciskami dropdown. Użyłem do tego bilioteki React. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components. Za routing odpowiada React Router.",
+    descriptionLong:
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja typu SPA jest w pełni responsywna. Widok dla telefonów posiada wysuwane menu. Nawigacja pomiędzy stronami to zasługa React Router.",
+    siteUrl:
+      "https://intro-section-with-dropdown-navigation-terejkodev.netlify.app",
+    gitHubUrl:
+      "https://github.com/jarekTerejko/intro-section-with-dropdown-navigation",
     languages: ["JavaScript"],
     tools: ["react", "styled components"],
   },
