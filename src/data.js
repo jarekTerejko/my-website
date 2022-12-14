@@ -19,6 +19,7 @@ import ArchStudio1 from "./images/portfolio/desktop/image-portfolio-arch.jpg";
 import ArtGallery1 from "./images/portfolio/desktop/image-portfolio-art.jpg";
 import Audiophile1 from "./images/portfolio/desktop/image-portfolio-audiophile.jpg";
 import IntroSection1 from "./images/portfolio/desktop/image-portfolio-intro-section.jpg";
+import Officelite1 from "./images/portfolio/desktop/image-portfolio-officelite.jpg";
 import Manage2 from "./images/portfolio/tablet/image-portfolio-manage.jpg";
 import Bookmark2 from "./images/portfolio/tablet/image-portfolio-bookmark.jpg";
 import Fylo2 from "./images/portfolio/tablet/image-portfolio-fylo.jpg";
@@ -40,6 +41,7 @@ import ArchStudio2 from "./images/portfolio/tablet/image-portfolio-arch.jpg";
 import ArtGallery2 from "./images/portfolio/tablet/image-portfolio-art.jpg";
 import Audiophile2 from "./images/portfolio/tablet/image-portfolio-audiophile.jpg";
 import IntroSection2 from "./images/portfolio/tablet/image-portfolio-intro-section.jpg";
+import Officelite2 from "./images/portfolio/tablet/image-portfolio-officelite.jpg";
 import Manage3 from "./images/portfolio/mobile/image-portfolio-manage.jpg";
 import Bookmark3 from "./images/portfolio/mobile/image-portfolio-bookmark.jpg";
 import Fylo3 from "./images/portfolio/mobile/image-portfolio-fylo.jpg";
@@ -61,6 +63,7 @@ import ArchStudio3 from "./images/portfolio/mobile/image-portfolio-arch.jpg";
 import ArtGallery3 from "./images/portfolio/mobile/image-portfolio-art.jpg";
 import Audiophile3 from "./images/portfolio/mobile/image-portfolio-audiophile.jpg";
 import IntroSection3 from "./images/portfolio/mobile/image-portfolio-intro-section.jpg";
+import Officelite3 from "./images/portfolio/mobile/image-portfolio-officelite.jpg";
 import Manage4 from "./images/project/desktop/image-manage-hero.jpg";
 import Manage7 from "./images/project/tablet/image-manage-hero.jpg";
 import Manage8 from "./images/project/mobile/image-manage-hero.jpg";
@@ -122,6 +125,9 @@ import Audiophile8 from "./images/project/mobile/image-audiophile-hero.jpg";
 import IntroSection4 from "./images/project/desktop/image-intro-section-hero.jpg";
 import IntroSection7 from "./images/project/tablet/image-intro-section-hero.jpg";
 import IntroSection8 from "./images/project/mobile/image-intro-section-hero.jpg";
+import Officelite4 from "./images/project/desktop/image-officelite-hero.jpg";
+import Officelite7 from "./images/project/desktop/image-officelite-hero.jpg";
+import Officelite8 from "./images/project/desktop/image-officelite-hero.jpg";
 import Manage5 from "./images/project/desktop/image-manage-preview-1.jpg";
 import Bookmark5 from "./images/project/desktop/image-bookmark-preview-1.jpg";
 import Fylo5 from "./images/project/desktop/image-fylo-preview-1.jpg";
@@ -143,6 +149,7 @@ import ArchStudio5 from "./images/project/desktop/image-arch-preview-1.jpg";
 import ArtGallery5 from "./images/project/desktop/image-art-preview-1.jpg";
 import Audiophile5 from "./images/project/desktop/image-audiophile-preview-1.jpg";
 import IntroSection5 from "./images/project/desktop/image-intro-section-preview-1.jpg";
+import Officelite5 from "./images/project/desktop/image-officelite-preview-1.jpg";
 import Manage6 from "./images/project/desktop/image-manage-preview-2.jpg";
 import Bookmark6 from "./images/project/desktop/image-bookmark-preview-2.jpg";
 import Fylo6 from "./images/project/desktop/image-fylo-preview-2.jpg";
@@ -164,6 +171,7 @@ import ArchStudio6 from "./images/project/desktop/image-arch-preview-2.jpg";
 import ArtGallery6 from "./images/project/desktop/image-art-preview-2.jpg";
 import Audiophile6 from "./images/project/desktop/image-audiophile-preview-2.jpg";
 import IntroSection6 from "./images/project/desktop/image-intro-section-preview-2.jpg";
+import Officelite6 from "./images/project/desktop/image-officelite-preview-2.jpg";
 
 export const dataProjects = [
   // {
@@ -790,5 +798,43 @@ export const dataProjects = [
       "https://github.com/jarekTerejko/intro-section-with-dropdown-navigation",
     languages: ["JavaScript"],
     tools: ["react", "styled components"],
+  },
+  {
+    id: 22,
+    images: {
+      img1: Officelite1,
+      img2: Officelite2,
+      img3: Officelite3,
+      img4: Officelite4,
+      img5: Officelite5,
+      img6: Officelite6,
+      img7: Officelite7,
+      img8: Officelite8,
+    },
+    title: "Officelite coming soon site",
+    goals: [
+      "responsywność",
+      "Styled Components",
+      "multi-page",
+      "formularz z walidacją",
+      "animacja konfetti",
+      "countdown",
+    ],
+    descriptionShort:
+      "Projekt wymagał ode mnie zbudowania w pełni resposywnej witryny typu multi-page. Użyłem do tego bilioteki React oraz frameworka Next.js. Aplikacja jest w pełni responsywna. Komponenty napisane są przy użyciu Styled Components.",
+    descriptionLong:
+      "Projekt jest jednym z wyzwań z platformy Frontend Mentor. Zbudowana aplikacja jest w pełni responsywna. Posiada formularz z walidacją oraz animację z konfetti, pojawiającą się po prawidłowo uzupełnionym i przesłanym formularzu.",
+    siteUrl: "https://officelite-terejkodev.netlify.app",
+    gitHubUrl: "https://github.com/jarekTerejko/officelite-coming-soon-site",
+    languages: ["JavaScript"],
+    tools: [
+      "react",
+      "styled components",
+      "next.JS",
+      "Formik",
+      "Yup",
+      "Framer Motion",
+      "React Confetti",
+    ],
   },
 ];
